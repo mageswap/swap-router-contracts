@@ -2,15 +2,15 @@
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
-import '@uniswap/v3-periphery/contracts/base/PeripheryImmutableState.sol';
-import '@uniswap/v3-core/contracts/libraries/SafeCast.sol';
-import '@uniswap/v3-core/contracts/libraries/TickMath.sol';
-import '@uniswap/v3-core/contracts/libraries/TickBitmap.sol';
-import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
-import '@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol';
-import '@uniswap/v3-periphery/contracts/libraries/Path.sol';
-import '@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol';
-import '@uniswap/v3-periphery/contracts/libraries/CallbackValidation.sol';
+import '@mageswap/v3-periphery/contracts/base/PeripheryImmutableState.sol';
+import '@mageswap/v3-core/contracts/libraries/SafeCast.sol';
+import '@mageswap/v3-core/contracts/libraries/TickMath.sol';
+import '@mageswap/v3-core/contracts/libraries/TickBitmap.sol';
+import '@mageswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@mageswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol';
+import '@mageswap/v3-periphery/contracts/libraries/Path.sol';
+import '@mageswap/v3-periphery/contracts/libraries/PoolAddress.sol';
+import '@mageswap/v3-periphery/contracts/libraries/CallbackValidation.sol';
 
 import '../interfaces/IQuoterV2.sol';
 import '../libraries/PoolTicksCounter.sol';

@@ -45,7 +45,7 @@ In addition, all vulnerabilities disclosed prior to the mainnet launch date will
 
 ## Disclosure
 
-Any vulnerability or bug discovered must be reported only to the following email: [security@uniswap.org](mailto:security@uniswap.org).
+Any vulnerability or bug discovered must be reported only to the following email: [security@mageswap.org](mailto:security@mageswap.org).
 
 The vulnerability must not be disclosed publicly or to any other person, entity or email address before Uniswap Labs has been notified, has fixed the issue, and has granted permission for public disclosure. In addition, disclosure must be made within 24 hours following discovery of the vulnerability.
 
@@ -62,7 +62,7 @@ Anyone who reports a unique, previously-unreported vulnerability that results in
 To be eligible for a reward under this Program, you must:
 
 - Discover a previously unreported, non-public vulnerability that would result in a loss of and/or lock on any ERC-20 token on Uniswap V2 or V3 (but not on any third party platform) and that is within the scope of this Program. Vulnerabilities must be distinct from the issues covered in the Trail of Bits or ABDK audits.
-- Be the first to disclose the unique vulnerability to [security@uniswap.org](mailto:security@uniswap.org), in compliance with the disclosure requirements above. If similar vulnerabilities are reported within the same 24 hour period, rewards will be split at the discretion of Uniswap Labs.
+- Be the first to disclose the unique vulnerability to [security@mageswap.org](mailto:security@mageswap.org), in compliance with the disclosure requirements above. If similar vulnerabilities are reported within the same 24 hour period, rewards will be split at the discretion of Uniswap Labs.
 - Provide sufficient information to enable our engineers to reproduce and fix the vulnerability.
 - Not engage in any unlawful conduct when disclosing the bug, including through threats, demands, or any other coercive tactics.
 - Not exploit the vulnerability in any way, including through making it public or by obtaining a profit (other than a reward under this Program).
