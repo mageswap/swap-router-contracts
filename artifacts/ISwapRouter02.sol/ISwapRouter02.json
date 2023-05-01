@@ -1,0 +1,2042 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveMax",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveMaxMinusOne",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveZeroThenMax",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveZeroThenMaxMinusOne",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "callPositionManager",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "result",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes",
+              "name": "path",
+              "type": "bytes"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountOutMinimum",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IV3SwapRouter.ExactInputParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "exactInput",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tokenIn",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "tokenOut",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "fee",
+              "type": "uint24"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountOutMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint160",
+              "name": "sqrtPriceLimitX96",
+              "type": "uint160"
+            }
+          ],
+          "internalType": "struct IV3SwapRouter.ExactInputSingleParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "exactInputSingle",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes",
+              "name": "path",
+              "type": "bytes"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountOut",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountInMaximum",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IV3SwapRouter.ExactOutputParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "exactOutput",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tokenIn",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "tokenOut",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "fee",
+              "type": "uint24"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountOut",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountInMaximum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint160",
+              "name": "sqrtPriceLimitX96",
+              "type": "uint160"
+            }
+          ],
+          "internalType": "struct IV3SwapRouter.ExactOutputSingleParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "exactOutputSingle",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getApprovalType",
+      "outputs": [
+        {
+          "internalType": "enum IApproveAndCall.ApprovalType",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount0Min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount1Min",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IApproveAndCall.IncreaseLiquidityParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "increaseLiquidity",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "result",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "fee",
+              "type": "uint24"
+            },
+            {
+              "internalType": "int24",
+              "name": "tickLower",
+              "type": "int24"
+            },
+            {
+              "internalType": "int24",
+              "name": "tickUpper",
+              "type": "int24"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount0Min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount1Min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IApproveAndCall.MintParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "mint",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "result",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "previousBlockhash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "data",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "multicall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "results",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "data",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "multicall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "results",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "data",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "multicall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "results",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitAllowed",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitAllowedIfNecessary",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "selfPermitIfNecessary",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountOutMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "swapExactTokensForTokens",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountInMax",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "swapTokensForExactTokens",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "amount0Delta",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "amount1Delta",
+          "type": "int256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "uniswapV3SwapCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "approveMax(address)": "571ac8b0",
+    "approveMaxMinusOne(address)": "cab372ce",
+    "approveZeroThenMax(address)": "639d71a9",
+    "approveZeroThenMaxMinusOne(address)": "ab3fdd50",
+    "callPositionManager(bytes)": "b3a2af13",
+    "exactInput((bytes,address,uint256,uint256))": "b858183f",
+    "exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))": "04e45aaf",
+    "exactOutput((bytes,address,uint256,uint256))": "09b81346",
+    "exactOutputSingle((address,address,uint24,address,uint256,uint256,uint160))": "5023b4df",
+    "getApprovalType(address,uint256)": "dee00f35",
+    "increaseLiquidity((address,address,uint256,uint256,uint256))": "f100b205",
+    "mint((address,address,uint24,int24,int24,uint256,uint256,address))": "11ed56c9",
+    "multicall(bytes32,bytes[])": "1f0464d1",
+    "multicall(bytes[])": "ac9650d8",
+    "multicall(uint256,bytes[])": "5ae401dc",
+    "selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": "f3995c67",
+    "selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": "4659a494",
+    "selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": "a4a78f0c",
+    "selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": "c2e3140a",
+    "swapExactTokensForTokens(uint256,uint256,address[],address)": "472b43f3",
+    "swapTokensForExactTokens(uint256,uint256,address[],address)": "42712a67",
+    "uniswapV3SwapCallback(int256,int256,bytes)": "fa461e33"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveMax\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveMaxMinusOne\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveZeroThenMax\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveZeroThenMaxMinusOne\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"callPositionManager\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"result\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"bytes\",\"name\":\"path\",\"type\":\"bytes\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMinimum\",\"type\":\"uint256\"}],\"internalType\":\"struct IV3SwapRouter.ExactInputParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"exactInput\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"tokenIn\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenOut\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMinimum\",\"type\":\"uint256\"},{\"internalType\":\"uint160\",\"name\":\"sqrtPriceLimitX96\",\"type\":\"uint160\"}],\"internalType\":\"struct IV3SwapRouter.ExactInputSingleParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"exactInputSingle\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"bytes\",\"name\":\"path\",\"type\":\"bytes\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountInMaximum\",\"type\":\"uint256\"}],\"internalType\":\"struct IV3SwapRouter.ExactOutputParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"exactOutput\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"tokenIn\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenOut\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountInMaximum\",\"type\":\"uint256\"},{\"internalType\":\"uint160\",\"name\":\"sqrtPriceLimitX96\",\"type\":\"uint160\"}],\"internalType\":\"struct IV3SwapRouter.ExactOutputSingleParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"exactOutputSingle\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"getApprovalType\",\"outputs\":[{\"internalType\":\"enum IApproveAndCall.ApprovalType\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount0Min\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1Min\",\"type\":\"uint256\"}],\"internalType\":\"struct IApproveAndCall.IncreaseLiquidityParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"increaseLiquidity\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"result\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"int24\",\"name\":\"tickLower\",\"type\":\"int24\"},{\"internalType\":\"int24\",\"name\":\"tickUpper\",\"type\":\"int24\"},{\"internalType\":\"uint256\",\"name\":\"amount0Min\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1Min\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"}],\"internalType\":\"struct IApproveAndCall.MintParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"mint\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"result\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"previousBlockhash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes[]\",\"name\":\"data\",\"type\":\"bytes[]\"}],\"name\":\"multicall\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"results\",\"type\":\"bytes[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bytes[]\",\"name\":\"data\",\"type\":\"bytes[]\"}],\"name\":\"multicall\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"results\",\"type\":\"bytes[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes[]\",\"name\":\"data\",\"type\":\"bytes[]\"}],\"name\":\"multicall\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"results\",\"type\":\"bytes[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitAllowed\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"expiry\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitAllowedIfNecessary\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"selfPermitIfNecessary\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMin\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"swapExactTokensForTokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountInMax\",\"type\":\"uint256\"},{\"internalType\":\"address[]\",\"name\":\"path\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"swapTokensForExactTokens\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"amount0Delta\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"amount1Delta\",\"type\":\"int256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV3SwapCallback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approveMax(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"approveMaxMinusOne(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"approveZeroThenMax(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"approveZeroThenMaxMinusOne(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"callPositionManager(bytes)\":{\"params\":{\"data\":\"Calldata to pass along to the position manager\"},\"returns\":{\"result\":\"The result from the call\"}},\"exactInput((bytes,address,uint256,uint256))\":{\"details\":\"Setting `amountIn` to 0 will cause the contract to look up its own balance, and swap the entire amount, enabling contracts to send tokens before calling this function.\",\"params\":{\"params\":\"The parameters necessary for the multi-hop swap, encoded as `ExactInputParams` in calldata\"},\"returns\":{\"amountOut\":\"The amount of the received token\"}},\"exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))\":{\"details\":\"Setting `amountIn` to 0 will cause the contract to look up its own balance, and swap the entire amount, enabling contracts to send tokens before calling this function.\",\"params\":{\"params\":\"The parameters necessary for the swap, encoded as `ExactInputSingleParams` in calldata\"},\"returns\":{\"amountOut\":\"The amount of the received token\"}},\"exactOutput((bytes,address,uint256,uint256))\":{\"params\":{\"params\":\"The parameters necessary for the multi-hop swap, encoded as `ExactOutputParams` in calldata\"},\"returns\":{\"amountIn\":\"The amount of the input token\"}},\"exactOutputSingle((address,address,uint24,address,uint256,uint256,uint160))\":{\"params\":{\"params\":\"The parameters necessary for the swap, encoded as `ExactOutputSingleParams` in calldata\"},\"returns\":{\"amountIn\":\"The amount of the input token\"}},\"getApprovalType(address,uint256)\":{\"details\":\"Lens to be called off-chain to determine which (if any) of the relevant approval functions should be called\",\"params\":{\"amount\":\"The amount to approve\",\"token\":\"The token to approve\"},\"returns\":{\"_0\":\"The required approval type\"}},\"increaseLiquidity((address,address,uint256,uint256,uint256))\":{\"params\":{\"params\":\"Calldata to pass along to the position manager\"},\"returns\":{\"result\":\"The result from the call\"}},\"mint((address,address,uint24,int24,int24,uint256,uint256,address))\":{\"params\":{\"params\":\"Calldata to pass along to the position manager\"},\"returns\":{\"result\":\"The result from the call\"}},\"multicall(bytes32,bytes[])\":{\"details\":\"The `msg.value` should not be trusted for any method callable from multicall.\",\"params\":{\"data\":\"The encoded function data for each of the calls to make to this contract\",\"previousBlockhash\":\"The expected parent blockHash\"},\"returns\":{\"results\":\"The results from each of the calls passed in via data\"}},\"multicall(bytes[])\":{\"details\":\"The `msg.value` should not be trusted for any method callable from multicall.\",\"params\":{\"data\":\"The encoded function data for each of the calls to make to this contract\"},\"returns\":{\"results\":\"The results from each of the calls passed in via data\"}},\"multicall(uint256,bytes[])\":{\"details\":\"The `msg.value` should not be trusted for any method callable from multicall.\",\"params\":{\"data\":\"The encoded function data for each of the calls to make to this contract\",\"deadline\":\"The time by which this function must be called before failing\"},\"returns\":{\"results\":\"The results from each of the calls passed in via data\"}},\"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this).\",\"params\":{\"deadline\":\"A timestamp, the current blocktime must be less than or equal to this timestamp\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\",\"value\":\"The amount that can be spent of token\"}},\"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this)\",\"params\":{\"expiry\":\"The timestamp at which the permit is no longer valid\",\"nonce\":\"The current nonce of the owner\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\"}},\"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.\",\"params\":{\"expiry\":\"The timestamp at which the permit is no longer valid\",\"nonce\":\"The current nonce of the owner\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\"}},\"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit\",\"params\":{\"deadline\":\"A timestamp, the current blocktime must be less than or equal to this timestamp\",\"r\":\"Must produce valid secp256k1 signature from the holder along with `v` and `s`\",\"s\":\"Must produce valid secp256k1 signature from the holder along with `r` and `v`\",\"token\":\"The address of the token spent\",\"v\":\"Must produce valid secp256k1 signature from the holder along with `r` and `s`\",\"value\":\"The amount that can be spent of token\"}},\"swapExactTokensForTokens(uint256,uint256,address[],address)\":{\"details\":\"Setting `amountIn` to 0 will cause the contract to look up its own balance, and swap the entire amount, enabling contracts to send tokens before calling this function.\",\"params\":{\"amountIn\":\"The amount of token to swap\",\"amountOutMin\":\"The minimum amount of output that must be received\",\"path\":\"The ordered list of tokens to swap through\",\"to\":\"The recipient address\"},\"returns\":{\"amountOut\":\"The amount of the received token\"}},\"swapTokensForExactTokens(uint256,uint256,address[],address)\":{\"params\":{\"amountInMax\":\"The maximum amount of input that the caller will pay\",\"amountOut\":\"The amount of token to swap for\",\"path\":\"The ordered list of tokens to swap through\",\"to\":\"The recipient address\"},\"returns\":{\"amountIn\":\"The amount of token to pay\"}},\"uniswapV3SwapCallback(int256,int256,bytes)\":{\"details\":\"In the implementation you must pay the pool tokens owed for the swap. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory. amount0Delta and amount1Delta can both be 0 if no tokens were swapped.\",\"params\":{\"amount0Delta\":\"The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool.\",\"amount1Delta\":\"The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool.\",\"data\":\"Any data passed through by the caller via the IUniswapV3PoolActions#swap call\"}}},\"title\":\"Router token swapping functionality\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"approveMax(address)\":{\"notice\":\"Approves a token for the maximum possible amount\"},\"approveMaxMinusOne(address)\":{\"notice\":\"Approves a token for the maximum possible amount minus one\"},\"approveZeroThenMax(address)\":{\"notice\":\"Approves a token for zero, then the maximum possible amount\"},\"approveZeroThenMaxMinusOne(address)\":{\"notice\":\"Approves a token for zero, then the maximum possible amount minus one\"},\"callPositionManager(bytes)\":{\"notice\":\"Calls the position manager with arbitrary calldata\"},\"exactInput((bytes,address,uint256,uint256))\":{\"notice\":\"Swaps `amountIn` of one token for as much as possible of another along the specified path\"},\"exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))\":{\"notice\":\"Swaps `amountIn` of one token for as much as possible of another token\"},\"exactOutput((bytes,address,uint256,uint256))\":{\"notice\":\"Swaps as little as possible of one token for `amountOut` of another along the specified path (reversed) that may remain in the router after the swap.\"},\"exactOutputSingle((address,address,uint24,address,uint256,uint256,uint160))\":{\"notice\":\"Swaps as little as possible of one token for `amountOut` of another token that may remain in the router after the swap.\"},\"increaseLiquidity((address,address,uint256,uint256,uint256))\":{\"notice\":\"Calls the position manager's increaseLiquidity function\"},\"mint((address,address,uint24,int24,int24,uint256,uint256,address))\":{\"notice\":\"Calls the position manager's mint function\"},\"multicall(bytes32,bytes[])\":{\"notice\":\"Call multiple functions in the current contract and return the data from all of them if they all succeed\"},\"multicall(bytes[])\":{\"notice\":\"Call multiple functions in the current contract and return the data from all of them if they all succeed\"},\"multicall(uint256,bytes[])\":{\"notice\":\"Call multiple functions in the current contract and return the data from all of them if they all succeed\"},\"selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend a given token from `msg.sender`\"},\"selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\"},\"selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter\"},\"selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"Permits this contract to spend a given token from `msg.sender`\"},\"swapExactTokensForTokens(uint256,uint256,address[],address)\":{\"notice\":\"Swaps `amountIn` of one token for as much as possible of another token\"},\"swapTokensForExactTokens(uint256,uint256,address[],address)\":{\"notice\":\"Swaps as little as possible of one token for an exact amount of another token\"},\"uniswapV3SwapCallback(int256,int256,bytes)\":{\"notice\":\"Called to `msg.sender` after executing a swap via IUniswapV3Pool#swap.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/ISwapRouter02.sol\":\"ISwapRouter02\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IApproveAndCall.sol\":{\"keccak256\":\"0x7d3824ad9a4090e2f4bb98d844f6ceb720f8c2608a909e4c0d86584be32d7fce\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://8230cdc6fd9171081943821d71888cec07bf4bae0b5fb85fa7c450f3c2b1ad44\",\"dweb:/ipfs/QmXF9NtVtCjr92ngVwwDjSGpiktGz2BDPHsvVoFPgkSP4K\"]},\"contracts/interfaces/IMulticallExtended.sol\":{\"keccak256\":\"0xf2f6cf20200e265bfefc6f31f8dd3fa7af97d02d7cdae8734d1aaf17142653f2\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://2b14a85ea54409d8cc45c2148a4349e99fab1d48c80f941fd434cf87f9a08355\",\"dweb:/ipfs/QmQ83pfwMVMKkso7AeKHSxyQrMDufqEYzLyHQwz5p2YGW6\"]},\"contracts/interfaces/ISwapRouter02.sol\":{\"keccak256\":\"0x267a2451b21b8df0467d27cd7e5e4decf03c1c7f4272d14f1d81f26f68817237\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://3470f0b80a2f7331921afa6337c81daf16c50cd9c80b58d811a96815433dde80\",\"dweb:/ipfs/QmdS8xxQP16RyzjVE1rESwfEDEzpM4obthYMeDzbb8kA5f\"]},\"contracts/interfaces/IV2SwapRouter.sol\":{\"keccak256\":\"0xfc31c1d8d559aef138a826066ca471573d7efe497775fcbf3546f27f4e84f2eb\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://01e5a1a70e4149eb0ee216c2a455b0138b2d307f0139500e24065a5b4ab9b287\",\"dweb:/ipfs/QmX3ZvAS571F3tvKnuHTtKqh78yBoJD5GsX2fv3UbC3kdU\"]},\"contracts/interfaces/IV3SwapRouter.sol\":{\"keccak256\":\"0x0a009029ef04b5c770a8013ff39b9a6b2a2e1e92d66cab6a43c53a10ddd9bbaf\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://964ec44b9387d898e5c8dee78aa345499490a7fc37308452ecf49eadf975c176\",\"dweb:/ipfs/QmYKytozZ7UtHjYkfXnoEVpDHbfn2fWMKg4rVroq4QP61f\"]},\"node_modules/@mageswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol\":{\"keccak256\":\"0x3f485fb1a44e8fbeadefb5da07d66edab3cfe809f0ac4074b1e54e3eb3c4cf69\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://095ce0626b41318c772b3ebf19d548282607f6a8f3d6c41c13edfbd5370c8652\",\"dweb:/ipfs/QmVDZfJJ89UUCE1hMyzqpkZAtQ8jUsBgZNE5AMRG7RzRFS\"]},\"node_modules/@mageswap/v3-periphery/contracts/interfaces/IMulticall.sol\":{\"keccak256\":\"0xa8f9d0061ee730a522dc4bae6bd5cabb3e997e2c5983da183e912bdca93dfa7b\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://496b68d4f72d58cc83cf51bd9cc9c99aaa46dc3c3df7c951a9e50ba29ee33016\",\"dweb:/ipfs/Qmc3bkXwuRP8mDpcKgvLgbCKn8tD8PGCaBjnLHSPMJCRGD\"]},\"node_modules/@mageswap/v3-periphery/contracts/interfaces/ISelfPermit.sol\":{\"keccak256\":\"0xe1a1c072855e687c90317c15b9b6ce81cc683723f73d70e47b40f2f9bad0c2be\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://53b0881a1c55254d157054bd3d1c86982c0f5429bd2a9986c15479f6b71ef678\",\"dweb:/ipfs/Qmc9WZqXzQmqsA3xYxojbx9nXcG3FGuwAjM3opEmRGSnBb\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveMax"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveMaxMinusOne"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveZeroThenMax"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveZeroThenMaxMinusOne"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "callPositionManager",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "result",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IV3SwapRouter.ExactInputParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes",
+                  "name": "path",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountIn",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountOutMinimum",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "exactInput",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountOut",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IV3SwapRouter.ExactInputSingleParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "tokenIn",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "tokenOut",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint24",
+                  "name": "fee",
+                  "type": "uint24"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountIn",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountOutMinimum",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint160",
+                  "name": "sqrtPriceLimitX96",
+                  "type": "uint160"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "exactInputSingle",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountOut",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IV3SwapRouter.ExactOutputParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes",
+                  "name": "path",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountOut",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountInMaximum",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "exactOutput",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IV3SwapRouter.ExactOutputSingleParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "tokenIn",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "tokenOut",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint24",
+                  "name": "fee",
+                  "type": "uint24"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountOut",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountInMaximum",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint160",
+                  "name": "sqrtPriceLimitX96",
+                  "type": "uint160"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "exactOutputSingle",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "getApprovalType",
+          "outputs": [
+            {
+              "internalType": "enum IApproveAndCall.ApprovalType",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IApproveAndCall.IncreaseLiquidityParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token0",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token1",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "tokenId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount0Min",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount1Min",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "increaseLiquidity",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "result",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IApproveAndCall.MintParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token0",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token1",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint24",
+                  "name": "fee",
+                  "type": "uint24"
+                },
+                {
+                  "internalType": "int24",
+                  "name": "tickLower",
+                  "type": "int24"
+                },
+                {
+                  "internalType": "int24",
+                  "name": "tickUpper",
+                  "type": "int24"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount0Min",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount1Min",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "mint",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "result",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "previousBlockhash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes[]",
+              "name": "data",
+              "type": "bytes[]"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "multicall",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "results",
+              "type": "bytes[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes[]",
+              "name": "data",
+              "type": "bytes[]"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "multicall",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "results",
+              "type": "bytes[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "data",
+              "type": "bytes[]"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "multicall",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "results",
+              "type": "bytes[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "selfPermit"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expiry",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "selfPermitAllowed"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expiry",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "selfPermitAllowedIfNecessary"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "selfPermitIfNecessary"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountOutMin",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "path",
+              "type": "address[]"
+            },
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "swapExactTokensForTokens",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountOut",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountOut",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountInMax",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "path",
+              "type": "address[]"
+            },
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "swapTokensForExactTokens",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int256",
+              "name": "amount0Delta",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "amount1Delta",
+              "type": "int256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "uniswapV3SwapCallback"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "approveMax(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "approveMaxMinusOne(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "approveZeroThenMax(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "approveZeroThenMaxMinusOne(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "callPositionManager(bytes)": {
+            "params": {
+              "data": "Calldata to pass along to the position manager"
+            },
+            "returns": {
+              "result": "The result from the call"
+            }
+          },
+          "exactInput((bytes,address,uint256,uint256))": {
+            "details": "Setting `amountIn` to 0 will cause the contract to look up its own balance, and swap the entire amount, enabling contracts to send tokens before calling this function.",
+            "params": {
+              "params": "The parameters necessary for the multi-hop swap, encoded as `ExactInputParams` in calldata"
+            },
+            "returns": {
+              "amountOut": "The amount of the received token"
+            }
+          },
+          "exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))": {
+            "details": "Setting `amountIn` to 0 will cause the contract to look up its own balance, and swap the entire amount, enabling contracts to send tokens before calling this function.",
+            "params": {
+              "params": "The parameters necessary for the swap, encoded as `ExactInputSingleParams` in calldata"
+            },
+            "returns": {
+              "amountOut": "The amount of the received token"
+            }
+          },
+          "exactOutput((bytes,address,uint256,uint256))": {
+            "params": {
+              "params": "The parameters necessary for the multi-hop swap, encoded as `ExactOutputParams` in calldata"
+            },
+            "returns": {
+              "amountIn": "The amount of the input token"
+            }
+          },
+          "exactOutputSingle((address,address,uint24,address,uint256,uint256,uint160))": {
+            "params": {
+              "params": "The parameters necessary for the swap, encoded as `ExactOutputSingleParams` in calldata"
+            },
+            "returns": {
+              "amountIn": "The amount of the input token"
+            }
+          },
+          "getApprovalType(address,uint256)": {
+            "details": "Lens to be called off-chain to determine which (if any) of the relevant approval functions should be called",
+            "params": {
+              "amount": "The amount to approve",
+              "token": "The token to approve"
+            },
+            "returns": {
+              "_0": "The required approval type"
+            }
+          },
+          "increaseLiquidity((address,address,uint256,uint256,uint256))": {
+            "params": {
+              "params": "Calldata to pass along to the position manager"
+            },
+            "returns": {
+              "result": "The result from the call"
+            }
+          },
+          "mint((address,address,uint24,int24,int24,uint256,uint256,address))": {
+            "params": {
+              "params": "Calldata to pass along to the position manager"
+            },
+            "returns": {
+              "result": "The result from the call"
+            }
+          },
+          "multicall(bytes32,bytes[])": {
+            "details": "The `msg.value` should not be trusted for any method callable from multicall.",
+            "params": {
+              "data": "The encoded function data for each of the calls to make to this contract",
+              "previousBlockhash": "The expected parent blockHash"
+            },
+            "returns": {
+              "results": "The results from each of the calls passed in via data"
+            }
+          },
+          "multicall(bytes[])": {
+            "details": "The `msg.value` should not be trusted for any method callable from multicall.",
+            "params": {
+              "data": "The encoded function data for each of the calls to make to this contract"
+            },
+            "returns": {
+              "results": "The results from each of the calls passed in via data"
+            }
+          },
+          "multicall(uint256,bytes[])": {
+            "details": "The `msg.value` should not be trusted for any method callable from multicall.",
+            "params": {
+              "data": "The encoded function data for each of the calls to make to this contract",
+              "deadline": "The time by which this function must be called before failing"
+            },
+            "returns": {
+              "results": "The results from each of the calls passed in via data"
+            }
+          },
+          "selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "details": "The `owner` is always msg.sender and the `spender` is always address(this).",
+            "params": {
+              "deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+              "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+              "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+              "token": "The address of the token spent",
+              "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+              "value": "The amount that can be spent of token"
+            }
+          },
+          "selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "details": "The `owner` is always msg.sender and the `spender` is always address(this)",
+            "params": {
+              "expiry": "The timestamp at which the permit is no longer valid",
+              "nonce": "The current nonce of the owner",
+              "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+              "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+              "token": "The address of the token spent",
+              "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+            }
+          },
+          "selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "details": "The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.",
+            "params": {
+              "expiry": "The timestamp at which the permit is no longer valid",
+              "nonce": "The current nonce of the owner",
+              "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+              "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+              "token": "The address of the token spent",
+              "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`"
+            }
+          },
+          "selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "details": "The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit",
+            "params": {
+              "deadline": "A timestamp, the current blocktime must be less than or equal to this timestamp",
+              "r": "Must produce valid secp256k1 signature from the holder along with `v` and `s`",
+              "s": "Must produce valid secp256k1 signature from the holder along with `r` and `v`",
+              "token": "The address of the token spent",
+              "v": "Must produce valid secp256k1 signature from the holder along with `r` and `s`",
+              "value": "The amount that can be spent of token"
+            }
+          },
+          "swapExactTokensForTokens(uint256,uint256,address[],address)": {
+            "details": "Setting `amountIn` to 0 will cause the contract to look up its own balance, and swap the entire amount, enabling contracts to send tokens before calling this function.",
+            "params": {
+              "amountIn": "The amount of token to swap",
+              "amountOutMin": "The minimum amount of output that must be received",
+              "path": "The ordered list of tokens to swap through",
+              "to": "The recipient address"
+            },
+            "returns": {
+              "amountOut": "The amount of the received token"
+            }
+          },
+          "swapTokensForExactTokens(uint256,uint256,address[],address)": {
+            "params": {
+              "amountInMax": "The maximum amount of input that the caller will pay",
+              "amountOut": "The amount of token to swap for",
+              "path": "The ordered list of tokens to swap through",
+              "to": "The recipient address"
+            },
+            "returns": {
+              "amountIn": "The amount of token to pay"
+            }
+          },
+          "uniswapV3SwapCallback(int256,int256,bytes)": {
+            "details": "In the implementation you must pay the pool tokens owed for the swap. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory. amount0Delta and amount1Delta can both be 0 if no tokens were swapped.",
+            "params": {
+              "amount0Delta": "The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool.",
+              "amount1Delta": "The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool.",
+              "data": "Any data passed through by the caller via the IUniswapV3PoolActions#swap call"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "approveMax(address)": {
+            "notice": "Approves a token for the maximum possible amount"
+          },
+          "approveMaxMinusOne(address)": {
+            "notice": "Approves a token for the maximum possible amount minus one"
+          },
+          "approveZeroThenMax(address)": {
+            "notice": "Approves a token for zero, then the maximum possible amount"
+          },
+          "approveZeroThenMaxMinusOne(address)": {
+            "notice": "Approves a token for zero, then the maximum possible amount minus one"
+          },
+          "callPositionManager(bytes)": {
+            "notice": "Calls the position manager with arbitrary calldata"
+          },
+          "exactInput((bytes,address,uint256,uint256))": {
+            "notice": "Swaps `amountIn` of one token for as much as possible of another along the specified path"
+          },
+          "exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))": {
+            "notice": "Swaps `amountIn` of one token for as much as possible of another token"
+          },
+          "exactOutput((bytes,address,uint256,uint256))": {
+            "notice": "Swaps as little as possible of one token for `amountOut` of another along the specified path (reversed) that may remain in the router after the swap."
+          },
+          "exactOutputSingle((address,address,uint24,address,uint256,uint256,uint160))": {
+            "notice": "Swaps as little as possible of one token for `amountOut` of another token that may remain in the router after the swap."
+          },
+          "increaseLiquidity((address,address,uint256,uint256,uint256))": {
+            "notice": "Calls the position manager's increaseLiquidity function"
+          },
+          "mint((address,address,uint24,int24,int24,uint256,uint256,address))": {
+            "notice": "Calls the position manager's mint function"
+          },
+          "multicall(bytes32,bytes[])": {
+            "notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+          },
+          "multicall(bytes[])": {
+            "notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+          },
+          "multicall(uint256,bytes[])": {
+            "notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+          },
+          "selfPermit(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "notice": "Permits this contract to spend a given token from `msg.sender`"
+          },
+          "selfPermitAllowed(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+          },
+          "selfPermitAllowedIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "notice": "Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter"
+          },
+          "selfPermitIfNecessary(address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "notice": "Permits this contract to spend a given token from `msg.sender`"
+          },
+          "swapExactTokensForTokens(uint256,uint256,address[],address)": {
+            "notice": "Swaps `amountIn` of one token for as much as possible of another token"
+          },
+          "swapTokensForExactTokens(uint256,uint256,address[],address)": {
+            "notice": "Swaps as little as possible of one token for an exact amount of another token"
+          },
+          "uniswapV3SwapCallback(int256,int256,bytes)": {
+            "notice": "Called to `msg.sender` after executing a swap via IUniswapV3Pool#swap."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/ISwapRouter02.sol": "ISwapRouter02"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IApproveAndCall.sol": {
+        "keccak256": "0x7d3824ad9a4090e2f4bb98d844f6ceb720f8c2608a909e4c0d86584be32d7fce",
+        "urls": [
+          "bzz-raw://8230cdc6fd9171081943821d71888cec07bf4bae0b5fb85fa7c450f3c2b1ad44",
+          "dweb:/ipfs/QmXF9NtVtCjr92ngVwwDjSGpiktGz2BDPHsvVoFPgkSP4K"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/interfaces/IMulticallExtended.sol": {
+        "keccak256": "0xf2f6cf20200e265bfefc6f31f8dd3fa7af97d02d7cdae8734d1aaf17142653f2",
+        "urls": [
+          "bzz-raw://2b14a85ea54409d8cc45c2148a4349e99fab1d48c80f941fd434cf87f9a08355",
+          "dweb:/ipfs/QmQ83pfwMVMKkso7AeKHSxyQrMDufqEYzLyHQwz5p2YGW6"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/interfaces/ISwapRouter02.sol": {
+        "keccak256": "0x267a2451b21b8df0467d27cd7e5e4decf03c1c7f4272d14f1d81f26f68817237",
+        "urls": [
+          "bzz-raw://3470f0b80a2f7331921afa6337c81daf16c50cd9c80b58d811a96815433dde80",
+          "dweb:/ipfs/QmdS8xxQP16RyzjVE1rESwfEDEzpM4obthYMeDzbb8kA5f"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/interfaces/IV2SwapRouter.sol": {
+        "keccak256": "0xfc31c1d8d559aef138a826066ca471573d7efe497775fcbf3546f27f4e84f2eb",
+        "urls": [
+          "bzz-raw://01e5a1a70e4149eb0ee216c2a455b0138b2d307f0139500e24065a5b4ab9b287",
+          "dweb:/ipfs/QmX3ZvAS571F3tvKnuHTtKqh78yBoJD5GsX2fv3UbC3kdU"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/interfaces/IV3SwapRouter.sol": {
+        "keccak256": "0x0a009029ef04b5c770a8013ff39b9a6b2a2e1e92d66cab6a43c53a10ddd9bbaf",
+        "urls": [
+          "bzz-raw://964ec44b9387d898e5c8dee78aa345499490a7fc37308452ecf49eadf975c176",
+          "dweb:/ipfs/QmYKytozZ7UtHjYkfXnoEVpDHbfn2fWMKg4rVroq4QP61f"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "node_modules/@mageswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol": {
+        "keccak256": "0x3f485fb1a44e8fbeadefb5da07d66edab3cfe809f0ac4074b1e54e3eb3c4cf69",
+        "urls": [
+          "bzz-raw://095ce0626b41318c772b3ebf19d548282607f6a8f3d6c41c13edfbd5370c8652",
+          "dweb:/ipfs/QmVDZfJJ89UUCE1hMyzqpkZAtQ8jUsBgZNE5AMRG7RzRFS"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "node_modules/@mageswap/v3-periphery/contracts/interfaces/IMulticall.sol": {
+        "keccak256": "0xa8f9d0061ee730a522dc4bae6bd5cabb3e997e2c5983da183e912bdca93dfa7b",
+        "urls": [
+          "bzz-raw://496b68d4f72d58cc83cf51bd9cc9c99aaa46dc3c3df7c951a9e50ba29ee33016",
+          "dweb:/ipfs/Qmc3bkXwuRP8mDpcKgvLgbCKn8tD8PGCaBjnLHSPMJCRGD"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "node_modules/@mageswap/v3-periphery/contracts/interfaces/ISelfPermit.sol": {
+        "keccak256": "0xe1a1c072855e687c90317c15b9b6ce81cc683723f73d70e47b40f2f9bad0c2be",
+        "urls": [
+          "bzz-raw://53b0881a1c55254d157054bd3d1c86982c0f5429bd2a9986c15479f6b71ef678",
+          "dweb:/ipfs/Qmc9WZqXzQmqsA3xYxojbx9nXcG3FGuwAjM3opEmRGSnBb"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/ISwapRouter02.sol",
+    "id": 2807,
+    "exportedSymbols": {
+      "IApproveAndCall": [
+        2431
+      ],
+      "IMulticall": [
+        10250
+      ],
+      "IMulticallExtended": [
+        2542
+      ],
+      "ISelfPermit": [
+        10607
+      ],
+      "ISwapRouter02": [
+        2806
+      ],
+      "IUniswapV3SwapCallback": [
+        6894
+      ],
+      "IV2SwapRouter": [
+        2878
+      ],
+      "IV3SwapRouter": [
+        2966
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:403:19",
+    "nodes": [
+      {
+        "id": 2788,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:19",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".5"
+        ]
+      },
+      {
+        "id": 2789,
+        "nodeType": "PragmaDirective",
+        "src": "70:19:19",
+        "nodes": [],
+        "literals": [
+          "abicoder",
+          "v2"
+        ]
+      },
+      {
+        "id": 2790,
+        "nodeType": "ImportDirective",
+        "src": "91:69:19",
+        "nodes": [],
+        "absolutePath": "node_modules/@mageswap/v3-periphery/contracts/interfaces/ISelfPermit.sol",
+        "file": "@mageswap/v3-periphery/contracts/interfaces/ISelfPermit.sol",
+        "scope": 2807,
+        "sourceUnit": 10608,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 2791,
+        "nodeType": "ImportDirective",
+        "src": "162:29:19",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/IV2SwapRouter.sol",
+        "file": "./IV2SwapRouter.sol",
+        "scope": 2807,
+        "sourceUnit": 2879,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 2792,
+        "nodeType": "ImportDirective",
+        "src": "192:29:19",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/IV3SwapRouter.sol",
+        "file": "./IV3SwapRouter.sol",
+        "scope": 2807,
+        "sourceUnit": 2967,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 2793,
+        "nodeType": "ImportDirective",
+        "src": "222:31:19",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/IApproveAndCall.sol",
+        "file": "./IApproveAndCall.sol",
+        "scope": 2807,
+        "sourceUnit": 2432,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 2794,
+        "nodeType": "ImportDirective",
+        "src": "254:34:19",
+        "nodes": [],
+        "absolutePath": "contracts/interfaces/IMulticallExtended.sol",
+        "file": "./IMulticallExtended.sol",
+        "scope": 2807,
+        "sourceUnit": 2543,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 2806,
+        "nodeType": "ContractDefinition",
+        "src": "337:110:19",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 2796,
+              "name": "IV2SwapRouter",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2878,
+              "src": "364:13:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IV2SwapRouter_$2878",
+                "typeString": "contract IV2SwapRouter"
+              }
+            },
+            "id": 2797,
+            "nodeType": "InheritanceSpecifier",
+            "src": "364:13:19"
+          },
+          {
+            "baseName": {
+              "id": 2798,
+              "name": "IV3SwapRouter",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2966,
+              "src": "379:13:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IV3SwapRouter_$2966",
+                "typeString": "contract IV3SwapRouter"
+              }
+            },
+            "id": 2799,
+            "nodeType": "InheritanceSpecifier",
+            "src": "379:13:19"
+          },
+          {
+            "baseName": {
+              "id": 2800,
+              "name": "IApproveAndCall",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2431,
+              "src": "394:15:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IApproveAndCall_$2431",
+                "typeString": "contract IApproveAndCall"
+              }
+            },
+            "id": 2801,
+            "nodeType": "InheritanceSpecifier",
+            "src": "394:15:19"
+          },
+          {
+            "baseName": {
+              "id": 2802,
+              "name": "IMulticallExtended",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2542,
+              "src": "411:18:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IMulticallExtended_$2542",
+                "typeString": "contract IMulticallExtended"
+              }
+            },
+            "id": 2803,
+            "nodeType": "InheritanceSpecifier",
+            "src": "411:18:19"
+          },
+          {
+            "baseName": {
+              "id": 2804,
+              "name": "ISelfPermit",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10607,
+              "src": "431:11:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ISelfPermit_$10607",
+                "typeString": "contract ISelfPermit"
+              }
+            },
+            "id": 2805,
+            "nodeType": "InheritanceSpecifier",
+            "src": "431:11:19"
+          }
+        ],
+        "contractDependencies": [
+          2431,
+          2542,
+          2878,
+          2966,
+          6894,
+          10250,
+          10607
+        ],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 2795,
+          "nodeType": "StructuredDocumentation",
+          "src": "290:47:19",
+          "text": "@title Router token swapping functionality"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2806,
+          10607,
+          2542,
+          10250,
+          2431,
+          2966,
+          6894,
+          2878
+        ],
+        "name": "ISwapRouter02",
+        "scope": 2807
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 19
+}

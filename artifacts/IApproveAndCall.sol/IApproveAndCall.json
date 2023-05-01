@@ -1,0 +1,1636 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveMax",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveMaxMinusOne",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveZeroThenMax",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "approveZeroThenMaxMinusOne",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "callPositionManager",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "result",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getApprovalType",
+      "outputs": [
+        {
+          "internalType": "enum IApproveAndCall.ApprovalType",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount0Min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount1Min",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IApproveAndCall.IncreaseLiquidityParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "increaseLiquidity",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "result",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "fee",
+              "type": "uint24"
+            },
+            {
+              "internalType": "int24",
+              "name": "tickLower",
+              "type": "int24"
+            },
+            {
+              "internalType": "int24",
+              "name": "tickUpper",
+              "type": "int24"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount0Min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount1Min",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IApproveAndCall.MintParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "mint",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "result",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "approveMax(address)": "571ac8b0",
+    "approveMaxMinusOne(address)": "cab372ce",
+    "approveZeroThenMax(address)": "639d71a9",
+    "approveZeroThenMaxMinusOne(address)": "ab3fdd50",
+    "callPositionManager(bytes)": "b3a2af13",
+    "getApprovalType(address,uint256)": "dee00f35",
+    "increaseLiquidity((address,address,uint256,uint256,uint256))": "f100b205",
+    "mint((address,address,uint24,int24,int24,uint256,uint256,address))": "11ed56c9"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveMax\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveMaxMinusOne\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveZeroThenMax\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"approveZeroThenMaxMinusOne\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"callPositionManager\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"result\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"getApprovalType\",\"outputs\":[{\"internalType\":\"enum IApproveAndCall.ApprovalType\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount0Min\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1Min\",\"type\":\"uint256\"}],\"internalType\":\"struct IApproveAndCall.IncreaseLiquidityParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"increaseLiquidity\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"result\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"int24\",\"name\":\"tickLower\",\"type\":\"int24\"},{\"internalType\":\"int24\",\"name\":\"tickUpper\",\"type\":\"int24\"},{\"internalType\":\"uint256\",\"name\":\"amount0Min\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1Min\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"}],\"internalType\":\"struct IApproveAndCall.MintParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"mint\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"result\",\"type\":\"bytes\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approveMax(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"approveMaxMinusOne(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"approveZeroThenMax(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"approveZeroThenMaxMinusOne(address)\":{\"params\":{\"token\":\"The token to approve\"}},\"callPositionManager(bytes)\":{\"params\":{\"data\":\"Calldata to pass along to the position manager\"},\"returns\":{\"result\":\"The result from the call\"}},\"getApprovalType(address,uint256)\":{\"details\":\"Lens to be called off-chain to determine which (if any) of the relevant approval functions should be called\",\"params\":{\"amount\":\"The amount to approve\",\"token\":\"The token to approve\"},\"returns\":{\"_0\":\"The required approval type\"}},\"increaseLiquidity((address,address,uint256,uint256,uint256))\":{\"params\":{\"params\":\"Calldata to pass along to the position manager\"},\"returns\":{\"result\":\"The result from the call\"}},\"mint((address,address,uint24,int24,int24,uint256,uint256,address))\":{\"params\":{\"params\":\"Calldata to pass along to the position manager\"},\"returns\":{\"result\":\"The result from the call\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"approveMax(address)\":{\"notice\":\"Approves a token for the maximum possible amount\"},\"approveMaxMinusOne(address)\":{\"notice\":\"Approves a token for the maximum possible amount minus one\"},\"approveZeroThenMax(address)\":{\"notice\":\"Approves a token for zero, then the maximum possible amount\"},\"approveZeroThenMaxMinusOne(address)\":{\"notice\":\"Approves a token for zero, then the maximum possible amount minus one\"},\"callPositionManager(bytes)\":{\"notice\":\"Calls the position manager with arbitrary calldata\"},\"increaseLiquidity((address,address,uint256,uint256,uint256))\":{\"notice\":\"Calls the position manager's increaseLiquidity function\"},\"mint((address,address,uint24,int24,int24,uint256,uint256,address))\":{\"notice\":\"Calls the position manager's mint function\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IApproveAndCall.sol\":\"IApproveAndCall\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IApproveAndCall.sol\":{\"keccak256\":\"0x7d3824ad9a4090e2f4bb98d844f6ceb720f8c2608a909e4c0d86584be32d7fce\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://8230cdc6fd9171081943821d71888cec07bf4bae0b5fb85fa7c450f3c2b1ad44\",\"dweb:/ipfs/QmXF9NtVtCjr92ngVwwDjSGpiktGz2BDPHsvVoFPgkSP4K\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveMax"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveMaxMinusOne"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveZeroThenMax"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "approveZeroThenMaxMinusOne"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "callPositionManager",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "result",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "getApprovalType",
+          "outputs": [
+            {
+              "internalType": "enum IApproveAndCall.ApprovalType",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IApproveAndCall.IncreaseLiquidityParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token0",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token1",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "tokenId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount0Min",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount1Min",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "increaseLiquidity",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "result",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct IApproveAndCall.MintParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token0",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token1",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint24",
+                  "name": "fee",
+                  "type": "uint24"
+                },
+                {
+                  "internalType": "int24",
+                  "name": "tickLower",
+                  "type": "int24"
+                },
+                {
+                  "internalType": "int24",
+                  "name": "tickUpper",
+                  "type": "int24"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount0Min",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount1Min",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "mint",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "result",
+              "type": "bytes"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "approveMax(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "approveMaxMinusOne(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "approveZeroThenMax(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "approveZeroThenMaxMinusOne(address)": {
+            "params": {
+              "token": "The token to approve"
+            }
+          },
+          "callPositionManager(bytes)": {
+            "params": {
+              "data": "Calldata to pass along to the position manager"
+            },
+            "returns": {
+              "result": "The result from the call"
+            }
+          },
+          "getApprovalType(address,uint256)": {
+            "details": "Lens to be called off-chain to determine which (if any) of the relevant approval functions should be called",
+            "params": {
+              "amount": "The amount to approve",
+              "token": "The token to approve"
+            },
+            "returns": {
+              "_0": "The required approval type"
+            }
+          },
+          "increaseLiquidity((address,address,uint256,uint256,uint256))": {
+            "params": {
+              "params": "Calldata to pass along to the position manager"
+            },
+            "returns": {
+              "result": "The result from the call"
+            }
+          },
+          "mint((address,address,uint24,int24,int24,uint256,uint256,address))": {
+            "params": {
+              "params": "Calldata to pass along to the position manager"
+            },
+            "returns": {
+              "result": "The result from the call"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "approveMax(address)": {
+            "notice": "Approves a token for the maximum possible amount"
+          },
+          "approveMaxMinusOne(address)": {
+            "notice": "Approves a token for the maximum possible amount minus one"
+          },
+          "approveZeroThenMax(address)": {
+            "notice": "Approves a token for zero, then the maximum possible amount"
+          },
+          "approveZeroThenMaxMinusOne(address)": {
+            "notice": "Approves a token for zero, then the maximum possible amount minus one"
+          },
+          "callPositionManager(bytes)": {
+            "notice": "Calls the position manager with arbitrary calldata"
+          },
+          "increaseLiquidity((address,address,uint256,uint256,uint256))": {
+            "notice": "Calls the position manager's increaseLiquidity function"
+          },
+          "mint((address,address,uint24,int24,int24,uint256,uint256,address))": {
+            "notice": "Calls the position manager's mint function"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/IApproveAndCall.sol": "IApproveAndCall"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IApproveAndCall.sol": {
+        "keccak256": "0x7d3824ad9a4090e2f4bb98d844f6ceb720f8c2608a909e4c0d86584be32d7fce",
+        "urls": [
+          "bzz-raw://8230cdc6fd9171081943821d71888cec07bf4bae0b5fb85fa7c450f3c2b1ad44",
+          "dweb:/ipfs/QmXF9NtVtCjr92ngVwwDjSGpiktGz2BDPHsvVoFPgkSP4K"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/IApproveAndCall.sol",
+    "id": 2432,
+    "exportedSymbols": {
+      "IApproveAndCall": [
+        2431
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:2519:10",
+    "nodes": [
+      {
+        "id": 2337,
+        "nodeType": "PragmaDirective",
+        "src": "45:23:10",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 2338,
+        "nodeType": "PragmaDirective",
+        "src": "69:19:10",
+        "nodes": [],
+        "literals": [
+          "abicoder",
+          "v2"
+        ]
+      },
+      {
+        "id": 2431,
+        "nodeType": "ContractDefinition",
+        "src": "90:2473:10",
+        "nodes": [
+          {
+            "id": 2344,
+            "nodeType": "EnumDefinition",
+            "src": "122:92:10",
+            "nodes": [],
+            "canonicalName": "IApproveAndCall.ApprovalType",
+            "members": [
+              {
+                "id": 2339,
+                "name": "NOT_REQUIRED",
+                "nodeType": "EnumValue",
+                "src": "141:12:10"
+              },
+              {
+                "id": 2340,
+                "name": "MAX",
+                "nodeType": "EnumValue",
+                "src": "155:3:10"
+              },
+              {
+                "id": 2341,
+                "name": "MAX_MINUS_ONE",
+                "nodeType": "EnumValue",
+                "src": "160:13:10"
+              },
+              {
+                "id": 2342,
+                "name": "ZERO_THEN_MAX",
+                "nodeType": "EnumValue",
+                "src": "175:13:10"
+              },
+              {
+                "id": 2343,
+                "name": "ZERO_THEN_MAX_MINUS_ONE",
+                "nodeType": "EnumValue",
+                "src": "190:23:10"
+              }
+            ],
+            "name": "ApprovalType"
+          },
+          {
+            "id": 2354,
+            "nodeType": "FunctionDefinition",
+            "src": "470:88:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2345,
+              "nodeType": "StructuredDocumentation",
+              "src": "220:245:10",
+              "text": "@dev Lens to be called off-chain to determine which (if any) of the relevant approval functions should be called\n @param token The token to approve\n @param amount The amount to approve\n @return The required approval type"
+            },
+            "functionSelector": "dee00f35",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getApprovalType",
+            "parameters": {
+              "id": 2350,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2347,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2354,
+                  "src": "495:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2346,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "495:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2349,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2354,
+                  "src": "510:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2348,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "510:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "494:31:10"
+            },
+            "returnParameters": {
+              "id": 2353,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2352,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2354,
+                  "src": "544:12:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_ApprovalType_$2344",
+                    "typeString": "enum IApproveAndCall.ApprovalType"
+                  },
+                  "typeName": {
+                    "id": 2351,
+                    "name": "ApprovalType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2344,
+                    "src": "544:12:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_ApprovalType_$2344",
+                      "typeString": "enum IApproveAndCall.ApprovalType"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "543:14:10"
+            },
+            "scope": 2431,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2360,
+            "nodeType": "FunctionDefinition",
+            "src": "671:52:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2355,
+              "nodeType": "StructuredDocumentation",
+              "src": "564:102:10",
+              "text": "@notice Approves a token for the maximum possible amount\n @param token The token to approve"
+            },
+            "functionSelector": "571ac8b0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveMax",
+            "parameters": {
+              "id": 2358,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2357,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2360,
+                  "src": "691:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2356,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "691:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "690:15:10"
+            },
+            "returnParameters": {
+              "id": 2359,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "722:0:10"
+            },
+            "scope": 2431,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2366,
+            "nodeType": "FunctionDefinition",
+            "src": "846:60:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2361,
+              "nodeType": "StructuredDocumentation",
+              "src": "729:112:10",
+              "text": "@notice Approves a token for the maximum possible amount minus one\n @param token The token to approve"
+            },
+            "functionSelector": "cab372ce",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveMaxMinusOne",
+            "parameters": {
+              "id": 2364,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2363,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2366,
+                  "src": "874:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2362,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "874:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "873:15:10"
+            },
+            "returnParameters": {
+              "id": 2365,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "905:0:10"
+            },
+            "scope": 2431,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2372,
+            "nodeType": "FunctionDefinition",
+            "src": "1030:60:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2367,
+              "nodeType": "StructuredDocumentation",
+              "src": "912:113:10",
+              "text": "@notice Approves a token for zero, then the maximum possible amount\n @param token The token to approve"
+            },
+            "functionSelector": "639d71a9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveZeroThenMax",
+            "parameters": {
+              "id": 2370,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2369,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2372,
+                  "src": "1058:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2368,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1058:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1057:15:10"
+            },
+            "returnParameters": {
+              "id": 2371,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1089:0:10"
+            },
+            "scope": 2431,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2378,
+            "nodeType": "FunctionDefinition",
+            "src": "1224:68:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2373,
+              "nodeType": "StructuredDocumentation",
+              "src": "1096:123:10",
+              "text": "@notice Approves a token for zero, then the maximum possible amount minus one\n @param token The token to approve"
+            },
+            "functionSelector": "ab3fdd50",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveZeroThenMaxMinusOne",
+            "parameters": {
+              "id": 2376,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2375,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2378,
+                  "src": "1260:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2374,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1260:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1259:15:10"
+            },
+            "returnParameters": {
+              "id": 2377,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1291:0:10"
+            },
+            "scope": 2431,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2386,
+            "nodeType": "FunctionDefinition",
+            "src": "1480:95:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2379,
+              "nodeType": "StructuredDocumentation",
+              "src": "1298:177:10",
+              "text": "@notice Calls the position manager with arbitrary calldata\n @param data Calldata to pass along to the position manager\n @return result The result from the call"
+            },
+            "functionSelector": "b3a2af13",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "callPositionManager",
+            "parameters": {
+              "id": 2382,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2381,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2386,
+                  "src": "1509:17:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2380,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1509:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1508:19:10"
+            },
+            "returnParameters": {
+              "id": 2385,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2384,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2386,
+                  "src": "1554:19:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2383,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1554:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1553:21:10"
+            },
+            "scope": 2431,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2403,
+            "nodeType": "StructDefinition",
+            "src": "1581:226:10",
+            "nodes": [],
+            "canonicalName": "IApproveAndCall.MintParams",
+            "members": [
+              {
+                "constant": false,
+                "id": 2388,
+                "mutability": "mutable",
+                "name": "token0",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1609:14:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2387,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1609:7:10",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2390,
+                "mutability": "mutable",
+                "name": "token1",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1633:14:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2389,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1633:7:10",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2392,
+                "mutability": "mutable",
+                "name": "fee",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1657:10:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint24",
+                  "typeString": "uint24"
+                },
+                "typeName": {
+                  "id": 2391,
+                  "name": "uint24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1657:6:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2394,
+                "mutability": "mutable",
+                "name": "tickLower",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1677:15:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int24",
+                  "typeString": "int24"
+                },
+                "typeName": {
+                  "id": 2393,
+                  "name": "int24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1677:5:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2396,
+                "mutability": "mutable",
+                "name": "tickUpper",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1702:15:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int24",
+                  "typeString": "int24"
+                },
+                "typeName": {
+                  "id": 2395,
+                  "name": "int24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1702:5:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2398,
+                "mutability": "mutable",
+                "name": "amount0Min",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1727:18:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2397,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1727:7:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2400,
+                "mutability": "mutable",
+                "name": "amount1Min",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1755:18:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2399,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1755:7:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2402,
+                "mutability": "mutable",
+                "name": "recipient",
+                "nodeType": "VariableDeclaration",
+                "scope": 2403,
+                "src": "1783:17:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2401,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1783:7:10",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "MintParams",
+            "scope": 2431,
+            "visibility": "public"
+          },
+          {
+            "id": 2411,
+            "nodeType": "FunctionDefinition",
+            "src": "1989:89:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2404,
+              "nodeType": "StructuredDocumentation",
+              "src": "1813:171:10",
+              "text": "@notice Calls the position manager's mint function\n @param params Calldata to pass along to the position manager\n @return result The result from the call"
+            },
+            "functionSelector": "11ed56c9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "parameters": {
+              "id": 2407,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2406,
+                  "mutability": "mutable",
+                  "name": "params",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2411,
+                  "src": "2003:26:10",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_MintParams_$2403_calldata_ptr",
+                    "typeString": "struct IApproveAndCall.MintParams"
+                  },
+                  "typeName": {
+                    "id": 2405,
+                    "name": "MintParams",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2403,
+                    "src": "2003:10:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_MintParams_$2403_storage_ptr",
+                      "typeString": "struct IApproveAndCall.MintParams"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2002:28:10"
+            },
+            "returnParameters": {
+              "id": 2410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2409,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2411,
+                  "src": "2057:19:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2408,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2057:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2056:21:10"
+            },
+            "scope": 2431,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2422,
+            "nodeType": "StructDefinition",
+            "src": "2084:167:10",
+            "nodes": [],
+            "canonicalName": "IApproveAndCall.IncreaseLiquidityParams",
+            "members": [
+              {
+                "constant": false,
+                "id": 2413,
+                "mutability": "mutable",
+                "name": "token0",
+                "nodeType": "VariableDeclaration",
+                "scope": 2422,
+                "src": "2125:14:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2412,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2125:7:10",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2415,
+                "mutability": "mutable",
+                "name": "token1",
+                "nodeType": "VariableDeclaration",
+                "scope": 2422,
+                "src": "2149:14:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2414,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2149:7:10",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2417,
+                "mutability": "mutable",
+                "name": "tokenId",
+                "nodeType": "VariableDeclaration",
+                "scope": 2422,
+                "src": "2173:15:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2416,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2173:7:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2419,
+                "mutability": "mutable",
+                "name": "amount0Min",
+                "nodeType": "VariableDeclaration",
+                "scope": 2422,
+                "src": "2198:18:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2418,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2198:7:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2421,
+                "mutability": "mutable",
+                "name": "amount1Min",
+                "nodeType": "VariableDeclaration",
+                "scope": 2422,
+                "src": "2226:18:10",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2420,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2226:7:10",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "IncreaseLiquidityParams",
+            "scope": 2431,
+            "visibility": "public"
+          },
+          {
+            "id": 2430,
+            "nodeType": "FunctionDefinition",
+            "src": "2446:115:10",
+            "nodes": [],
+            "documentation": {
+              "id": 2423,
+              "nodeType": "StructuredDocumentation",
+              "src": "2257:184:10",
+              "text": "@notice Calls the position manager's increaseLiquidity function\n @param params Calldata to pass along to the position manager\n @return result The result from the call"
+            },
+            "functionSelector": "f100b205",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "increaseLiquidity",
+            "parameters": {
+              "id": 2426,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2425,
+                  "mutability": "mutable",
+                  "name": "params",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2430,
+                  "src": "2473:39:10",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_IncreaseLiquidityParams_$2422_calldata_ptr",
+                    "typeString": "struct IApproveAndCall.IncreaseLiquidityParams"
+                  },
+                  "typeName": {
+                    "id": 2424,
+                    "name": "IncreaseLiquidityParams",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2422,
+                    "src": "2473:23:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_IncreaseLiquidityParams_$2422_storage_ptr",
+                      "typeString": "struct IApproveAndCall.IncreaseLiquidityParams"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2472:41:10"
+            },
+            "returnParameters": {
+              "id": 2429,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2428,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2430,
+                  "src": "2540:19:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2427,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2540:5:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2539:21:10"
+            },
+            "scope": 2431,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2431
+        ],
+        "name": "IApproveAndCall",
+        "scope": 2432
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 10
+}

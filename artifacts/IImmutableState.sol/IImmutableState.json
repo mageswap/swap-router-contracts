@@ -1,0 +1,305 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "factoryV2",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionManager",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "factoryV2()": "68e0d4e1",
+    "positionManager()": "791b98bc"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"factoryV2\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"positionManager\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"factoryV2()\":{\"returns\":{\"_0\":\"Returns the address of the Uniswap V2 factory\"}},\"positionManager()\":{\"returns\":{\"_0\":\"Returns the address of Uniswap V3 NFT position manager\"}}},\"title\":\"Immutable state\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Functions that return immutable state of the router\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IImmutableState.sol\":\"IImmutableState\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IImmutableState.sol\":{\"keccak256\":\"0xe30562a3c59b7a755b558c688e9c87b7b8f919be54cf9f46507afe2537adc5db\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://5895db6514b4a5d9dde4fd5f324cf812e433aeef7d3118b1abb50a310bdd7025\",\"dweb:/ipfs/QmWpSNSRffRgsTn7MYLshzyXSvur4XHre4tpbHxLbsVvEB\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "factoryV2",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "positionManager",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "factoryV2()": {
+            "returns": {
+              "_0": "Returns the address of the Uniswap V2 factory"
+            }
+          },
+          "positionManager()": {
+            "returns": {
+              "_0": "Returns the address of Uniswap V3 NFT position manager"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/IImmutableState.sol": "IImmutableState"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IImmutableState.sol": {
+        "keccak256": "0xe30562a3c59b7a755b558c688e9c87b7b8f919be54cf9f46507afe2537adc5db",
+        "urls": [
+          "bzz-raw://5895db6514b4a5d9dde4fd5f324cf812e433aeef7d3118b1abb50a310bdd7025",
+          "dweb:/ipfs/QmWpSNSRffRgsTn7MYLshzyXSvur4XHre4tpbHxLbsVvEB"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/IImmutableState.sol",
+    "id": 2448,
+    "exportedSymbols": {
+      "IImmutableState": [
+        2447
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:403:11",
+    "nodes": [
+      {
+        "id": 2433,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:11",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 2447,
+        "nodeType": "ContractDefinition",
+        "src": "162:285:11",
+        "nodes": [
+          {
+            "id": 2440,
+            "nodeType": "FunctionDefinition",
+            "src": "256:53:11",
+            "nodes": [],
+            "documentation": {
+              "id": 2435,
+              "nodeType": "StructuredDocumentation",
+              "src": "194:57:11",
+              "text": "@return Returns the address of the Uniswap V2 factory"
+            },
+            "functionSelector": "68e0d4e1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "factoryV2",
+            "parameters": {
+              "id": 2436,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "274:2:11"
+            },
+            "returnParameters": {
+              "id": 2439,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2438,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2440,
+                  "src": "300:7:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2437,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "300:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "299:9:11"
+            },
+            "scope": 2447,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2446,
+            "nodeType": "FunctionDefinition",
+            "src": "386:59:11",
+            "nodes": [],
+            "documentation": {
+              "id": 2441,
+              "nodeType": "StructuredDocumentation",
+              "src": "315:66:11",
+              "text": "@return Returns the address of Uniswap V3 NFT position manager"
+            },
+            "functionSelector": "791b98bc",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "positionManager",
+            "parameters": {
+              "id": 2442,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "410:2:11"
+            },
+            "returnParameters": {
+              "id": 2445,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2444,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2446,
+                  "src": "436:7:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2443,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "436:7:11",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "435:9:11"
+            },
+            "scope": 2447,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 2434,
+          "nodeType": "StructuredDocumentation",
+          "src": "71:91:11",
+          "text": "@title Immutable state\n @notice Functions that return immutable state of the router"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2447
+        ],
+        "name": "IImmutableState",
+        "scope": 2448
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 11
+}

@@ -1,0 +1,622 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "tokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address[]",
+          "name": "baseTokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountToBorrow",
+          "type": "uint256"
+        }
+      ],
+      "name": "batchValidate",
+      "outputs": [
+        {
+          "internalType": "enum ITokenValidator.Status[]",
+          "name": "",
+          "type": "uint8[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "baseTokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountToBorrow",
+          "type": "uint256"
+        }
+      ],
+      "name": "validate",
+      "outputs": [
+        {
+          "internalType": "enum ITokenValidator.Status",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "batchValidate(address[],address[],uint256)": "be7672e5",
+    "validate(address,address[],uint256)": "0143aace"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"tokens\",\"type\":\"address[]\"},{\"internalType\":\"address[]\",\"name\":\"baseTokens\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"amountToBorrow\",\"type\":\"uint256\"}],\"name\":\"batchValidate\",\"outputs\":[{\"internalType\":\"enum ITokenValidator.Status[]\",\"name\":\"\",\"type\":\"uint8[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address[]\",\"name\":\"baseTokens\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"amountToBorrow\",\"type\":\"uint256\"}],\"name\":\"validate\",\"outputs\":[{\"internalType\":\"enum ITokenValidator.Status\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"We can not guarantee the result of this lens is correct for a few reasons:1/ Some tokens take fees or allow transfers under specific conditions, for example some have an allowlistof addresses that do/dont require fees. Therefore the result is not guaranteed to be correctin all circumstances.2/ It is possible that the token does not have any pools on V2 therefore we are not able to performa flashloan to test the token.These functions are not marked view because they rely on calling non-view functions and reverting to compute the result.\",\"kind\":\"dev\",\"methods\":{\"batchValidate(address[],address[],uint256)\":{\"params\":{\"amountToBorrow\":\"The amount to try flash borrowing from the pools\",\"baseTokens\":\"The addresses of the tokens to try pairing with token when looking for a pool to flash loan from.\",\"tokens\":\"The addresses of the tokens to check for fee on transfer\"},\"returns\":{\"_0\":\"The status of the token\"}},\"validate(address,address[],uint256)\":{\"params\":{\"amountToBorrow\":\"The amount to try flash borrowing from the pools\",\"baseTokens\":\"The addresses of the tokens to try pairing with token when looking for a pool to flash loan from.\",\"token\":\"The address of the token to check for fee on transfer\"},\"returns\":{\"_0\":\"The status of the token\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"batchValidate(address[],address[],uint256)\":{\"notice\":\"Validates each token by detecting if its transferable or takes a fee on transfer\"},\"validate(address,address[],uint256)\":{\"notice\":\"Validates a token by detecting if its transferable or takes a fee on transfer\"}},\"notice\":\"Validates tokens by flash borrowing from the token/<base token> pool on V2.Returns     Status.FOT if we detected a fee is taken on transfer.     Status.STF if transfer failed for the token.     Status.UNKN if we did not detect any issues with the token.A return value of Status.UNKN does not mean the token is definitely not a fee on transfer token     or definitely has no problems with its transfer. It just means we cant say for sure that it has any     issues.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/ITokenValidator.sol\":\"ITokenValidator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/ITokenValidator.sol\":{\"keccak256\":\"0xf58c6fd42f5a94295958d70842578e2f23fc888a0fea00b028c5f16cfe8be753\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://092899260ed33495bc76d13b8b10c521fa90c426db681e49388c80cb8710e197\",\"dweb:/ipfs/QmQbXJovdUmLqmuUsBziYjWv28tnxo9P6kryCMCF2YqeBW\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address[]",
+              "name": "tokens",
+              "type": "address[]"
+            },
+            {
+              "internalType": "address[]",
+              "name": "baseTokens",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountToBorrow",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "batchValidate",
+          "outputs": [
+            {
+              "internalType": "enum ITokenValidator.Status[]",
+              "name": "",
+              "type": "uint8[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "address[]",
+              "name": "baseTokens",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountToBorrow",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "validate",
+          "outputs": [
+            {
+              "internalType": "enum ITokenValidator.Status",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "batchValidate(address[],address[],uint256)": {
+            "params": {
+              "amountToBorrow": "The amount to try flash borrowing from the pools",
+              "baseTokens": "The addresses of the tokens to try pairing with token when looking for a pool to flash loan from.",
+              "tokens": "The addresses of the tokens to check for fee on transfer"
+            },
+            "returns": {
+              "_0": "The status of the token"
+            }
+          },
+          "validate(address,address[],uint256)": {
+            "params": {
+              "amountToBorrow": "The amount to try flash borrowing from the pools",
+              "baseTokens": "The addresses of the tokens to try pairing with token when looking for a pool to flash loan from.",
+              "token": "The address of the token to check for fee on transfer"
+            },
+            "returns": {
+              "_0": "The status of the token"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "batchValidate(address[],address[],uint256)": {
+            "notice": "Validates each token by detecting if its transferable or takes a fee on transfer"
+          },
+          "validate(address,address[],uint256)": {
+            "notice": "Validates a token by detecting if its transferable or takes a fee on transfer"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/ITokenValidator.sol": "ITokenValidator"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/ITokenValidator.sol": {
+        "keccak256": "0xf58c6fd42f5a94295958d70842578e2f23fc888a0fea00b028c5f16cfe8be753",
+        "urls": [
+          "bzz-raw://092899260ed33495bc76d13b8b10c521fa90c426db681e49388c80cb8710e197",
+          "dweb:/ipfs/QmQbXJovdUmLqmuUsBziYjWv28tnxo9P6kryCMCF2YqeBW"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/ITokenValidator.sol",
+    "id": 2844,
+    "exportedSymbols": {
+      "ITokenValidator": [
+        2843
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:2587:20",
+    "nodes": [
+      {
+        "id": 2808,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:20",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".5"
+        ]
+      },
+      {
+        "id": 2809,
+        "nodeType": "PragmaDirective",
+        "src": "70:19:20",
+        "nodes": [],
+        "literals": [
+          "abicoder",
+          "v2"
+        ]
+      },
+      {
+        "id": 2843,
+        "nodeType": "ContractDefinition",
+        "src": "1238:1393:20",
+        "nodes": [
+          {
+            "id": 2814,
+            "nodeType": "EnumDefinition",
+            "src": "1428:28:20",
+            "nodes": [],
+            "canonicalName": "ITokenValidator.Status",
+            "members": [
+              {
+                "id": 2811,
+                "name": "UNKN",
+                "nodeType": "EnumValue",
+                "src": "1441:4:20"
+              },
+              {
+                "id": 2812,
+                "name": "FOT",
+                "nodeType": "EnumValue",
+                "src": "1447:3:20"
+              },
+              {
+                "id": 2813,
+                "name": "STF",
+                "nodeType": "EnumValue",
+                "src": "1452:3:20"
+              }
+            ],
+            "name": "Status"
+          },
+          {
+            "id": 2827,
+            "nodeType": "FunctionDefinition",
+            "src": "1882:144:20",
+            "nodes": [],
+            "documentation": {
+              "id": 2815,
+              "nodeType": "StructuredDocumentation",
+              "src": "1462:415:20",
+              "text": "@notice Validates a token by detecting if its transferable or takes a fee on transfer\n @param token The address of the token to check for fee on transfer\n @param baseTokens The addresses of the tokens to try pairing with\n token when looking for a pool to flash loan from.\n @param amountToBorrow The amount to try flash borrowing from the pools\n @return The status of the token"
+            },
+            "functionSelector": "0143aace",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validate",
+            "parameters": {
+              "id": 2823,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2817,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2827,
+                  "src": "1909:13:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2816,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1909:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2820,
+                  "mutability": "mutable",
+                  "name": "baseTokens",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2827,
+                  "src": "1932:29:20",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2818,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1932:7:20",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 2819,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1932:9:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2822,
+                  "mutability": "mutable",
+                  "name": "amountToBorrow",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2827,
+                  "src": "1971:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2821,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1971:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1899:100:20"
+            },
+            "returnParameters": {
+              "id": 2826,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2825,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2827,
+                  "src": "2018:6:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Status_$2814",
+                    "typeString": "enum ITokenValidator.Status"
+                  },
+                  "typeName": {
+                    "id": 2824,
+                    "name": "Status",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2814,
+                    "src": "2018:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Status_$2814",
+                      "typeString": "enum ITokenValidator.Status"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2017:8:20"
+            },
+            "scope": 2843,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2842,
+            "nodeType": "FunctionDefinition",
+            "src": "2459:170:20",
+            "nodes": [],
+            "documentation": {
+              "id": 2828,
+              "nodeType": "StructuredDocumentation",
+              "src": "2032:422:20",
+              "text": "@notice Validates each token by detecting if its transferable or takes a fee on transfer\n @param tokens The addresses of the tokens to check for fee on transfer\n @param baseTokens The addresses of the tokens to try pairing with\n token when looking for a pool to flash loan from.\n @param amountToBorrow The amount to try flash borrowing from the pools\n @return The status of the token"
+            },
+            "functionSelector": "be7672e5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "batchValidate",
+            "parameters": {
+              "id": 2837,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2831,
+                  "mutability": "mutable",
+                  "name": "tokens",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2842,
+                  "src": "2491:25:20",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2829,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2491:7:20",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 2830,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2491:9:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2834,
+                  "mutability": "mutable",
+                  "name": "baseTokens",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2842,
+                  "src": "2526:29:20",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2832,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "2526:7:20",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 2833,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2526:9:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2836,
+                  "mutability": "mutable",
+                  "name": "amountToBorrow",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2842,
+                  "src": "2565:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2835,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2565:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2481:112:20"
+            },
+            "returnParameters": {
+              "id": 2841,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2840,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2842,
+                  "src": "2612:15:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_enum$_Status_$2814_$dyn_memory_ptr",
+                    "typeString": "enum ITokenValidator.Status[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2838,
+                      "name": "Status",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 2814,
+                      "src": "2612:6:20",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Status_$2814",
+                        "typeString": "enum ITokenValidator.Status"
+                      }
+                    },
+                    "id": 2839,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2612:8:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_enum$_Status_$2814_$dyn_storage_ptr",
+                      "typeString": "enum ITokenValidator.Status[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2611:17:20"
+            },
+            "scope": 2843,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 2810,
+          "nodeType": "StructuredDocumentation",
+          "src": "91:1147:20",
+          "text": "@notice Validates tokens by flash borrowing from the token/<base token> pool on V2.\n @notice Returns\n     Status.FOT if we detected a fee is taken on transfer.\n     Status.STF if transfer failed for the token.\n     Status.UNKN if we did not detect any issues with the token.\n @notice A return value of Status.UNKN does not mean the token is definitely not a fee on transfer token\n     or definitely has no problems with its transfer. It just means we cant say for sure that it has any\n     issues.\n @dev We can not guarantee the result of this lens is correct for a few reasons:\n @dev 1/ Some tokens take fees or allow transfers under specific conditions, for example some have an allowlist\n @dev    of addresses that do/dont require fees. Therefore the result is not guaranteed to be correct\n @dev    in all circumstances.\n @dev 2/ It is possible that the token does not have any pools on V2 therefore we are not able to perform\n @dev    a flashloan to test the token.\n @dev These functions are not marked view because they rely on calling non-view functions and reverting\n to compute the result."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2843
+        ],
+        "name": "ITokenValidator",
+        "scope": 2844
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 20
+}

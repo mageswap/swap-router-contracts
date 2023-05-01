@@ -1,0 +1,400 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_factoryV2",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_positionManager",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "factoryV2",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionManager",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60c060405234801561001057600080fd5b506040516101573803806101578339818101604052604081101561003357600080fd5b5080516020909101516001600160601b0319606092831b8116608052911b1660a05260805160601c60a05160601c60dd61007a6000398060855250806061525060dd6000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806368e0d4e1146037578063791b98bc146059575b600080fd5b603d605f565b604080516001600160a01b039092168252519081900360200190f35b603d6083565b7f000000000000000000000000000000000000000000000000000000000000000081565b7f00000000000000000000000000000000000000000000000000000000000000008156fea26469706673582212200f6eff9f691cc862ff20c71bc6b12851ea98ac4a2571859e0b6ccb278fc7b7ac64736f6c63430007060033",
+    "sourceMap": "108:159:31:-:0;;;160:105;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;160:105:31;;;;;;;-1:-1:-1;;;;;;497:22:4;;;;;;;;529:34;;;;;108:159:31;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806368e0d4e1146037578063791b98bc146059575b600080fd5b603d605f565b604080516001600160a01b039092168252519081900360200190f35b603d6083565b7f000000000000000000000000000000000000000000000000000000000000000081565b7f00000000000000000000000000000000000000000000000000000000000000008156fea26469706673582212200f6eff9f691cc862ff20c71bc6b12851ea98ac4a2571859e0b6ccb278fc7b7ac64736f6c63430007060033",
+    "sourceMap": "108:159:31:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;288:43:4;;;:::i;:::-;;;;-1:-1:-1;;;;;288:43:4;;;;;;;;;;;;;;373:49;;;:::i;288:43::-;;;:::o;373:49::-;;;:::o",
+    "linkReferences": {},
+    "immutableReferences": {
+      "1565": [
+        {
+          "start": 97,
+          "length": 32
+        }
+      ],
+      "1569": [
+        {
+          "start": 133,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "factoryV2()": "68e0d4e1",
+    "positionManager()": "791b98bc"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_factoryV2\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_positionManager\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"factoryV2\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"positionManager\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/ImmutableStateTest.sol\":\"ImmutableStateTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/base/ImmutableState.sol\":{\"keccak256\":\"0x99bd366f5ab50cf2f6d2242021b57bda76235d2d71d9a3bd6789be4b867f5b2a\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f871d287bb528498b36a6a2fa27641841d2343b543b28efffaa1dff69eb3c7d4\",\"dweb:/ipfs/Qma3AVQqYF9DaMG4r7J1m6parBf8xjpuabBpBQKDsDwD6C\"]},\"contracts/interfaces/IImmutableState.sol\":{\"keccak256\":\"0xe30562a3c59b7a755b558c688e9c87b7b8f919be54cf9f46507afe2537adc5db\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://5895db6514b4a5d9dde4fd5f324cf812e433aeef7d3118b1abb50a310bdd7025\",\"dweb:/ipfs/QmWpSNSRffRgsTn7MYLshzyXSvur4XHre4tpbHxLbsVvEB\"]},\"contracts/test/ImmutableStateTest.sol\":{\"keccak256\":\"0xae6313550293f7cb3cab5173c9bea2bc94389fabf6f4fee0e7a8b51cf78532be\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f677041623d686f6c4432e40cc3cfb67f2099b50247d9dd46b566e7ffcee28ad\",\"dweb:/ipfs/Qmd3pAnq3YnGeGKsHHY4YrewYF4tc8K3HCuXS6w7vXFytE\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_factoryV2",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_positionManager",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "factoryV2",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "positionManager",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/test/ImmutableStateTest.sol": "ImmutableStateTest"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/base/ImmutableState.sol": {
+        "keccak256": "0x99bd366f5ab50cf2f6d2242021b57bda76235d2d71d9a3bd6789be4b867f5b2a",
+        "urls": [
+          "bzz-raw://f871d287bb528498b36a6a2fa27641841d2343b543b28efffaa1dff69eb3c7d4",
+          "dweb:/ipfs/Qma3AVQqYF9DaMG4r7J1m6parBf8xjpuabBpBQKDsDwD6C"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/interfaces/IImmutableState.sol": {
+        "keccak256": "0xe30562a3c59b7a755b558c688e9c87b7b8f919be54cf9f46507afe2537adc5db",
+        "urls": [
+          "bzz-raw://5895db6514b4a5d9dde4fd5f324cf812e433aeef7d3118b1abb50a310bdd7025",
+          "dweb:/ipfs/QmWpSNSRffRgsTn7MYLshzyXSvur4XHre4tpbHxLbsVvEB"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/test/ImmutableStateTest.sol": {
+        "keccak256": "0xae6313550293f7cb3cab5173c9bea2bc94389fabf6f4fee0e7a8b51cf78532be",
+        "urls": [
+          "bzz-raw://f677041623d686f6c4432e40cc3cfb67f2099b50247d9dd46b566e7ffcee28ad",
+          "dweb:/ipfs/Qmd3pAnq3YnGeGKsHHY4YrewYF4tc8K3HCuXS6w7vXFytE"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/test/ImmutableStateTest.sol",
+    "id": 5901,
+    "exportedSymbols": {
+      "IImmutableState": [
+        2447
+      ],
+      "ImmutableState": [
+        1586
+      ],
+      "ImmutableStateTest": [
+        5900
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:223:31",
+    "nodes": [
+      {
+        "id": 5884,
+        "nodeType": "PragmaDirective",
+        "src": "45:23:31",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 5885,
+        "nodeType": "ImportDirective",
+        "src": "70:36:31",
+        "nodes": [],
+        "absolutePath": "contracts/base/ImmutableState.sol",
+        "file": "../base/ImmutableState.sol",
+        "scope": 5901,
+        "sourceUnit": 1587,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 5900,
+        "nodeType": "ContractDefinition",
+        "src": "108:159:31",
+        "nodes": [
+          {
+            "id": 5899,
+            "nodeType": "FunctionDefinition",
+            "src": "160:105:31",
+            "nodes": [],
+            "body": {
+              "id": 5898,
+              "nodeType": "Block",
+              "src": "263:2:31",
+              "nodes": [],
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 5894,
+                    "name": "_factoryV2",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5889,
+                    "src": "233:10:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  {
+                    "id": 5895,
+                    "name": "_positionManager",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5891,
+                    "src": "245:16:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 5896,
+                "modifierName": {
+                  "id": 5893,
+                  "name": "ImmutableState",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 1586,
+                  "src": "218:14:31",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_ImmutableState_$1586_$",
+                    "typeString": "type(contract ImmutableState)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "218:44:31"
+              }
+            ],
+            "name": "",
+            "parameters": {
+              "id": 5892,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5889,
+                  "mutability": "mutable",
+                  "name": "_factoryV2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5899,
+                  "src": "172:18:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5888,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "172:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5891,
+                  "mutability": "mutable",
+                  "name": "_positionManager",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5899,
+                  "src": "192:24:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5890,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "192:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "171:46:31"
+            },
+            "returnParameters": {
+              "id": 5897,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "263:0:31"
+            },
+            "scope": 5900,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5886,
+              "name": "ImmutableState",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1586,
+              "src": "139:14:31",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ImmutableState_$1586",
+                "typeString": "contract ImmutableState"
+              }
+            },
+            "id": 5887,
+            "nodeType": "InheritanceSpecifier",
+            "src": "139:14:31"
+          }
+        ],
+        "contractDependencies": [
+          1586,
+          2447
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          5900,
+          1586,
+          2447
+        ],
+        "name": "ImmutableStateTest",
+        "scope": 5901
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 31
+}

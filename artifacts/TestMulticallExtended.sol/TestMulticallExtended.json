@@ -1,0 +1,1017 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "a",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "b",
+          "type": "uint256"
+        }
+      ],
+      "name": "functionThatReturnsTuple",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "a",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "b",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct TestMulticallExtended.Tuple",
+          "name": "tuple",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "previousBlockhash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "data",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "multicall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "data",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "multicall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "data",
+          "type": "bytes[]"
+        }
+      ],
+      "name": "multicall",
+      "outputs": [
+        {
+          "internalType": "bytes[]",
+          "name": "results",
+          "type": "bytes[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_time",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTime",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610677806100206000396000f3fe60806040526004361061004a5760003560e01c80631f0464d11461004f5780633b16a6a3146100785780633beb26c4146100a55780635ae401dc146100c7578063ac9650d8146100da575b600080fd5b61006261005d3660046103b4565b6100ed565b60405161006f919061053b565b60405180910390f35b34801561008457600080fd5b506100986100933660046104de565b610147565b60405161006f91906105b5565b3480156100b157600080fd5b506100c56100c0366004610495565b610168565b005b6100626100d53660046104ad565b61016d565b6100626100e8366004610374565b6101c2565b60608380600143034014610134576040805162461bcd60e51b8152602060048201526009602482015268084d8dec6d6d0c2e6d60bb1b604482015290519081900360640190fd5b61013e84846101c2565b95945050505050565b61014f610311565b5060408051808201909152908152602081019190915290565b600055565b6060838061017961030b565b1115610134576040805162461bcd60e51b8152602060048201526013602482015272151c985b9cd858dd1a5bdb881d1bdbc81bdb19606a1b604482015290519081900360640190fd5b60608167ffffffffffffffff811180156101db57600080fd5b5060405190808252806020026020018201604052801561020f57816020015b60608152602001906001900390816101fa5790505b50905060005b82811015610304576000803086868581811061022d57fe5b905060200281019061023f91906105cc565b60405161024d92919061052b565b600060405180830381855af49150503d8060008114610288576040519150601f19603f3d011682016040523d82523d6000602084013e61028d565b606091505b5091509150816102e2576044815110156102a657600080fd5b600481019050808060200190518101906102c091906103fe565b60405162461bcd60e51b81526004016102d9919061059b565b60405180910390fd5b808484815181106102ef57fe5b60209081029190910101525050600101610215565b5092915050565b60005490565b604051806040016040528060008152602001600081525090565b60008083601f84011261033c578081fd5b50813567ffffffffffffffff811115610353578182fd5b602083019150836020808302850101111561036d57600080fd5b9250929050565b60008060208385031215610386578182fd5b823567ffffffffffffffff81111561039c578283fd5b6103a88582860161032b565b90969095509350505050565b6000806000604084860312156103c8578081fd5b83359250602084013567ffffffffffffffff8111156103e5578182fd5b6103f18682870161032b565b9497909650939450505050565b60006020828403121561040f578081fd5b815167ffffffffffffffff80821115610426578283fd5b818401915084601f830112610439578283fd5b81518181111561044557fe5b604051601f8201601f19168101602001838111828210171561046357fe5b60405281815283820160200187101561047a578485fd5b61048b826020830160208701610611565b9695505050505050565b6000602082840312156104a6578081fd5b5035919050565b6000806000604084860312156104c1578283fd5b83359250602084013567ffffffffffffffff8111156103e5578283fd5b600080604083850312156104f0578182fd5b50508035926020909101359150565b60008151808452610517816020860160208601610611565b601f01601f19169290920160200192915050565b6000828483379101908152919050565b6000602080830181845280855180835260408601915060408482028701019250838701855b8281101561058e57603f1988860301845261057c8583516104ff565b94509285019290850190600101610560565b5092979650505050505050565b6000602082526105ae60208301846104ff565b9392505050565b815181526020918201519181019190915260400190565b6000808335601e198436030181126105e2578283fd5b83018035915067ffffffffffffffff8211156105fc578283fd5b60200191503681900382131561036d57600080fd5b60005b8381101561062c578181015183820152602001610614565b8381111561063b576000848401525b5050505056fea2646970667358221220de8810c809b01855b7ffa65c696f101f1f745dfba842032dfdb00e1157b2e30764736f6c63430007060033",
+    "sourceMap": "125:464:37:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x60806040526004361061004a5760003560e01c80631f0464d11461004f5780633b16a6a3146100785780633beb26c4146100a55780635ae401dc146100c7578063ac9650d8146100da575b600080fd5b61006261005d3660046103b4565b6100ed565b60405161006f919061053b565b60405180910390f35b34801561008457600080fd5b506100986100933660046104de565b610147565b60405161006f91906105b5565b3480156100b157600080fd5b506100c56100c0366004610495565b610168565b005b6100626100d53660046104ad565b61016d565b6100626100e8366004610374565b6101c2565b60608380600143034014610134576040805162461bcd60e51b8152602060048201526009602482015268084d8dec6d6d0c2e6d60bb1b604482015290519081900360640190fd5b61013e84846101c2565b95945050505050565b61014f610311565b5060408051808201909152908152602081019190915290565b600055565b6060838061017961030b565b1115610134576040805162461bcd60e51b8152602060048201526013602482015272151c985b9cd858dd1a5bdb881d1bdbc81bdb19606a1b604482015290519081900360640190fd5b60608167ffffffffffffffff811180156101db57600080fd5b5060405190808252806020026020018201604052801561020f57816020015b60608152602001906001900390816101fa5790505b50905060005b82811015610304576000803086868581811061022d57fe5b905060200281019061023f91906105cc565b60405161024d92919061052b565b600060405180830381855af49150503d8060008114610288576040519150601f19603f3d011682016040523d82523d6000602084013e61028d565b606091505b5091509150816102e2576044815110156102a657600080fd5b600481019050808060200190518101906102c091906103fe565b60405162461bcd60e51b81526004016102d9919061059b565b60405180910390fd5b808484815181106102ef57fe5b60209081029190910101525050600101610215565b5092915050565b60005490565b604051806040016040528060008152602001600081525090565b60008083601f84011261033c578081fd5b50813567ffffffffffffffff811115610353578182fd5b602083019150836020808302850101111561036d57600080fd5b9250929050565b60008060208385031215610386578182fd5b823567ffffffffffffffff81111561039c578283fd5b6103a88582860161032b565b90969095509350505050565b6000806000604084860312156103c8578081fd5b83359250602084013567ffffffffffffffff8111156103e5578182fd5b6103f18682870161032b565b9497909650939450505050565b60006020828403121561040f578081fd5b815167ffffffffffffffff80821115610426578283fd5b818401915084601f830112610439578283fd5b81518181111561044557fe5b604051601f8201601f19168101602001838111828210171561046357fe5b60405281815283820160200187101561047a578485fd5b61048b826020830160208701610611565b9695505050505050565b6000602082840312156104a6578081fd5b5035919050565b6000806000604084860312156104c1578283fd5b83359250602084013567ffffffffffffffff8111156103e5578283fd5b600080604083850312156104f0578182fd5b50508035926020909101359150565b60008151808452610517816020860160208601610611565b601f01601f19169290920160200192915050565b6000828483379101908152919050565b6000602080830181845280855180835260408601915060408482028701019250838701855b8281101561058e57603f1988860301845261057c8583516104ff565b94509285019290850190600101610560565b5092979650505050505050565b6000602082526105ae60208301846104ff565b9392505050565b815181526020918201519181019190915260400190565b6000808335601e198436030181126105e2578283fd5b83018035915067ffffffffffffffff8211156105fc578283fd5b60200191503681900382131561036d57600080fd5b60005b8381101561062c578181015183820152602001610614565b8381111561063b576000848401525b5050505056fea2646970667358221220de8810c809b01855b7ffa65c696f101f1f745dfba842032dfdb00e1157b2e30764736f6c63430007060033",
+    "sourceMap": "125:464:37:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;756:245:5;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;444:143:37;;;;;;;;;;-1:-1:-1;444:143:37;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;304:70::-;;;;;;;;;;-1:-1:-1;304:70:37;;;;;:::i;:::-;;:::i;:::-;;493:218:5;;;;;;:::i;:::-;;:::i;308:653:57:-;;;;;;:::i;:::-;;:::i;756:245:5:-;942:14;906:17;326::9;320:1;305:12;:16;295:27;:48;287:70;;;;;-1:-1:-1;;;287:70:9;;;;;;;;;;;;-1:-1:-1;;;287:70:9;;;;;;;;;;;;;;;979:15:5::1;989:4;;979:9;:15::i;:::-;972:22:::0;756:245;-1:-1:-1;;;;;756:245:5:o;444:143:37:-;523:18;;:::i;:::-;-1:-1:-1;561:19:37;;;;;;;;;;;;;;;;;;;;444:143::o;304:70::-;355:4;:12;304:70::o;493:218:5:-;652:14;625:8;244::61;223:17;:15;:17::i;:::-;:29;;215:61;;;;;-1:-1:-1;;;215:61:61;;;;;;;;;;;;-1:-1:-1;;;215:61:61;;;;;;;;;;;;;;308:653:57;383:22;439:4;427:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;417:34;;466:9;461:494;481:15;;;461:494;;;518:12;;563:4;582;;587:1;582:7;;;;;;;;;;;;;;;;;;:::i;:::-;555:35;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;517:73;;;;610:7;605:306;;737:2;721:6;:13;:18;717:32;;;741:8;;;717:32;820:4;812:6;808:17;798:27;;878:6;867:28;;;;;;;;;;;;:::i;:::-;860:36;;-1:-1:-1;;;860:36:57;;;;;;;;:::i;:::-;;;;;;;;605:306;938:6;925:7;933:1;925:10;;;;;;;;;;;;;;;;;:19;-1:-1:-1;;498:3:57;;461:494;;;;308:653;;;;:::o;202:96:37:-;261:7;287:4;202:96;:::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;:::o;14:407:92:-;;;154:3;147:4;139:6;135:17;131:27;121:2;;177:6;169;162:22;121:2;-1:-1:-1;205:20:92;;248:18;237:30;;234:2;;;287:8;277;270:26;234:2;331:4;323:6;319:17;307:29;;394:3;387:4;379;371:6;367:17;359:6;355:30;351:41;348:50;345:2;;;411:1;408;401:12;345:2;111:310;;;;;:::o;426:481::-;;;584:2;572:9;563:7;559:23;555:32;552:2;;;605:6;597;590:22;552:2;650:9;637:23;683:18;675:6;672:30;669:2;;;720:6;712;705:22;669:2;764:83;839:7;830:6;819:9;815:22;764:83;:::i;:::-;866:8;;738:109;;-1:-1:-1;542:365:92;-1:-1:-1;;;;542:365:92:o;912:549::-;;;;1087:2;1075:9;1066:7;1062:23;1058:32;1055:2;;;1108:6;1100;1093:22;1055:2;1149:9;1136:23;1126:33;;1210:2;1199:9;1195:18;1182:32;1237:18;1229:6;1226:30;1223:2;;;1274:6;1266;1259:22;1223:2;1318:83;1393:7;1384:6;1373:9;1369:22;1318:83;:::i;:::-;1045:416;;1420:8;;-1:-1:-1;1292:109:92;;-1:-1:-1;;;;1045:416:92:o;1466:876::-;;1599:2;1587:9;1578:7;1574:23;1570:32;1567:2;;;1620:6;1612;1605:22;1567:2;1658:9;1652:16;1687:18;1728:2;1720:6;1717:14;1714:2;;;1749:6;1741;1734:22;1714:2;1792:6;1781:9;1777:22;1767:32;;1837:7;1830:4;1826:2;1822:13;1818:27;1808:2;;1864:6;1856;1849:22;1808:2;1898;1892:9;1920:2;1916;1913:10;1910:2;;;1926:9;1910:2;1966;1960:9;2035:2;2016:13;;-1:-1:-1;;2012:27:92;2000:40;;2042:2;1996:49;2060:18;;;2080:22;;;2057:46;2054:2;;;2106:9;2054:2;2133;2126:22;2157:18;;;2194:11;;;2207:2;2190:20;2187:33;-1:-1:-1;2184:2:92;;;2238:6;2230;2223:22;2184:2;2256:55;2308:2;2303;2295:6;2291:15;2286:2;2282;2278:11;2256:55;:::i;:::-;2330:6;1557:785;-1:-1:-1;;;;;;1557:785:92:o;2347:190::-;;2459:2;2447:9;2438:7;2434:23;2430:32;2427:2;;;2480:6;2472;2465:22;2427:2;-1:-1:-1;2508:23:92;;2417:120;-1:-1:-1;2417:120:92:o;2542:549::-;;;;2717:2;2705:9;2696:7;2692:23;2688:32;2685:2;;;2738:6;2730;2723:22;2685:2;2779:9;2766:23;2756:33;;2840:2;2829:9;2825:18;2812:32;2867:18;2859:6;2856:30;2853:2;;;2904:6;2896;2889:22;3096:258;;;3225:2;3213:9;3204:7;3200:23;3196:32;3193:2;;;3246:6;3238;3231:22;3193:2;-1:-1:-1;;3274:23:92;;;3344:2;3329:18;;;3316:32;;-1:-1:-1;3183:171:92:o;3359:259::-;;3440:5;3434:12;3467:6;3462:3;3455:19;3483:63;3539:6;3532:4;3527:3;3523:14;3516:4;3509:5;3505:16;3483:63;:::i;:::-;3600:2;3579:15;-1:-1:-1;;3575:29:92;3566:39;;;;3607:4;3562:50;;3410:208;-1:-1:-1;;3410:208:92:o;3623:273::-;;3806:6;3798;3793:3;3780:33;3832:16;;3857:15;;;3832:16;3770:126;-1:-1:-1;3770:126:92:o;3901:806::-;;4090:2;4130;4119:9;4115:18;4160:2;4149:9;4142:21;4183:6;4218;4212:13;4249:6;4241;4234:22;4287:2;4276:9;4272:18;4265:25;;4350:2;4344;4336:6;4332:15;4321:9;4317:31;4313:40;4299:54;;4388:2;4380:6;4376:15;4409:4;4422:256;4436:6;4433:1;4430:13;4422:256;;;4529:2;4525:7;4513:9;4505:6;4501:22;4497:36;4492:3;4485:49;4557:41;4591:6;4582;4576:13;4557:41;:::i;:::-;4547:51;-1:-1:-1;4656:12:92;;;;4621:15;;;;4458:1;4451:9;4422:256;;;-1:-1:-1;4695:6:92;;4070:637;-1:-1:-1;;;;;;;4070:637:92:o;4712:221::-;;4861:2;4850:9;4843:21;4881:46;4923:2;4912:9;4908:18;4900:6;4881:46;:::i;:::-;4873:54;4833:100;-1:-1:-1;;;4833:100:92:o;4938:293::-;5148:13;;5130:32;;5218:4;5206:17;;;5200:24;5178:20;;;5171:54;;;;5118:2;5103:18;;5085:146::o;5236:533::-;;;5379:11;5366:25;5473:2;5469:7;5458:8;5442:14;5438:29;5434:43;5414:18;5410:68;5400:2;;5495:4;5489;5482:18;5400:2;5525:33;;5577:20;;;-1:-1:-1;5620:18:92;5609:30;;5606:2;;;5655:4;5649;5642:18;5606:2;5691:4;5679:17;;-1:-1:-1;5722:14:92;5718:27;;;5708:38;;5705:2;;;5759:1;5756;5749:12;5774:258;5846:1;5856:113;5870:6;5867:1;5864:13;5856:113;;;5946:11;;;5940:18;5927:11;;;5920:39;5892:2;5885:10;5856:113;;;5987:6;5984:1;5981:13;5978:2;;;6022:1;6013:6;6008:3;6004:16;5997:27;5978:2;;5827:205;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "functionThatReturnsTuple(uint256,uint256)": "3b16a6a3",
+    "multicall(bytes32,bytes[])": "1f0464d1",
+    "multicall(bytes[])": "ac9650d8",
+    "multicall(uint256,bytes[])": "5ae401dc",
+    "setTime(uint256)": "3beb26c4"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"b\",\"type\":\"uint256\"}],\"name\":\"functionThatReturnsTuple\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"b\",\"type\":\"uint256\"}],\"internalType\":\"struct TestMulticallExtended.Tuple\",\"name\":\"tuple\",\"type\":\"tuple\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"previousBlockhash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes[]\",\"name\":\"data\",\"type\":\"bytes[]\"}],\"name\":\"multicall\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"\",\"type\":\"bytes[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"bytes[]\",\"name\":\"data\",\"type\":\"bytes[]\"}],\"name\":\"multicall\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"\",\"type\":\"bytes[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes[]\",\"name\":\"data\",\"type\":\"bytes[]\"}],\"name\":\"multicall\",\"outputs\":[{\"internalType\":\"bytes[]\",\"name\":\"results\",\"type\":\"bytes[]\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_time\",\"type\":\"uint256\"}],\"name\":\"setTime\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"multicall(bytes32,bytes[])\":{\"details\":\"The `msg.value` should not be trusted for any method callable from multicall.\",\"params\":{\"data\":\"The encoded function data for each of the calls to make to this contract\",\"previousBlockhash\":\"The expected parent blockHash\"},\"returns\":{\"_0\":\"The results from each of the calls passed in via data\"}},\"multicall(bytes[])\":{\"details\":\"The `msg.value` should not be trusted for any method callable from multicall.\",\"params\":{\"data\":\"The encoded function data for each of the calls to make to this contract\"},\"returns\":{\"results\":\"The results from each of the calls passed in via data\"}},\"multicall(uint256,bytes[])\":{\"details\":\"The `msg.value` should not be trusted for any method callable from multicall.\",\"params\":{\"data\":\"The encoded function data for each of the calls to make to this contract\",\"deadline\":\"The time by which this function must be called before failing\"},\"returns\":{\"_0\":\"The results from each of the calls passed in via data\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"multicall(bytes32,bytes[])\":{\"notice\":\"Call multiple functions in the current contract and return the data from all of them if they all succeed\"},\"multicall(bytes[])\":{\"notice\":\"Call multiple functions in the current contract and return the data from all of them if they all succeed\"},\"multicall(uint256,bytes[])\":{\"notice\":\"Call multiple functions in the current contract and return the data from all of them if they all succeed\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/TestMulticallExtended.sol\":\"TestMulticallExtended\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/base/MulticallExtended.sol\":{\"keccak256\":\"0x3ed53d5df38026ae2e81f8f8cfe0d1b3aceb154e81766a51e9542d542640b2f6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://374fda674e68ce9fe3dd7ef4dfd7b9714aea803466e223380f20f8869dba5d48\",\"dweb:/ipfs/Qmc9reiYBSDVWkby9dP89smuDENiy52bACaaFaQgZ4ZUnE\"]},\"contracts/base/PeripheryValidationExtended.sol\":{\"keccak256\":\"0xbcb53f6802137e89666397c550380a5e8341e940120e1f603233541720d825e3\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://9cad90c99189ae198f433b83cbb479b8d9d99bbcc143785c77dd367e858a095b\",\"dweb:/ipfs/QmX7iZ5g7a2dbUTbb58wjh9quMRYWGVgEnujmdbDfGQ713\"]},\"contracts/interfaces/IMulticallExtended.sol\":{\"keccak256\":\"0xf2f6cf20200e265bfefc6f31f8dd3fa7af97d02d7cdae8734d1aaf17142653f2\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://2b14a85ea54409d8cc45c2148a4349e99fab1d48c80f941fd434cf87f9a08355\",\"dweb:/ipfs/QmQ83pfwMVMKkso7AeKHSxyQrMDufqEYzLyHQwz5p2YGW6\"]},\"contracts/test/TestMulticallExtended.sol\":{\"keccak256\":\"0x70b64672ac2d6c91c6bcab18297dc269fd0f3153880d392bbd4ffb14a4738c4c\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://fc71708afdab896481a78dc2749b95793b7ef67f4d1b3032ac7d84bd34e38e6e\",\"dweb:/ipfs/QmUbjDgAFtAzshRBCYNgDorJoaZutBTpwBxZy5xSLGkBJ8\"]},\"node_modules/@mageswap/v3-periphery/contracts/base/BlockTimestamp.sol\":{\"keccak256\":\"0x1aa66f71234064a0c0976f62233f2edbd69554e5ad817dc97f318bc8e11f4da6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b3a40450e9d6b0f9cb91b40ffd6215612505bd74e7d954529958f4edc6ee7b93\",\"dweb:/ipfs/QmewsUCHK5N5KhNtqEwK8JgsXFADyFBrQRS5HoDWM5gi3b\"]},\"node_modules/@mageswap/v3-periphery/contracts/base/Multicall.sol\":{\"keccak256\":\"0xfcfd78c62d2145634a791d5680a1af7055fbd301c415d29c09333c99c37d9037\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://0d1c8f4a18cec8ad49e5269c5b07c7f6fd497dfc1b7b777f8ddcfb8055efd803\",\"dweb:/ipfs/QmdeCTnfHM3RGtQuo3DMX9m7gPspGGwQp7ho6m9cJjjnER\"]},\"node_modules/@mageswap/v3-periphery/contracts/base/PeripheryValidation.sol\":{\"keccak256\":\"0xc736bab599912d6212e8414ee4ba7af0c1e08ff6aa11caa85f5f6e07f7d421c3\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://06f6c13a86900c71fa486fc029a59d1b7eb96162bb42885b5f845d995294893e\",\"dweb:/ipfs/QmUcBxMsmncw9n6eXhzzwSasGBvBGKH5FT8HSrAxrsXV4A\"]},\"node_modules/@mageswap/v3-periphery/contracts/interfaces/IMulticall.sol\":{\"keccak256\":\"0xa8f9d0061ee730a522dc4bae6bd5cabb3e997e2c5983da183e912bdca93dfa7b\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://496b68d4f72d58cc83cf51bd9cc9c99aaa46dc3c3df7c951a9e50ba29ee33016\",\"dweb:/ipfs/Qmc3bkXwuRP8mDpcKgvLgbCKn8tD8PGCaBjnLHSPMJCRGD\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "a",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "b",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "functionThatReturnsTuple",
+          "outputs": [
+            {
+              "internalType": "struct TestMulticallExtended.Tuple",
+              "name": "tuple",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "a",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "b",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "previousBlockhash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes[]",
+              "name": "data",
+              "type": "bytes[]"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "multicall",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "",
+              "type": "bytes[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes[]",
+              "name": "data",
+              "type": "bytes[]"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "multicall",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "",
+              "type": "bytes[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "data",
+              "type": "bytes[]"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "multicall",
+          "outputs": [
+            {
+              "internalType": "bytes[]",
+              "name": "results",
+              "type": "bytes[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_time",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setTime"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "multicall(bytes32,bytes[])": {
+            "details": "The `msg.value` should not be trusted for any method callable from multicall.",
+            "params": {
+              "data": "The encoded function data for each of the calls to make to this contract",
+              "previousBlockhash": "The expected parent blockHash"
+            },
+            "returns": {
+              "_0": "The results from each of the calls passed in via data"
+            }
+          },
+          "multicall(bytes[])": {
+            "details": "The `msg.value` should not be trusted for any method callable from multicall.",
+            "params": {
+              "data": "The encoded function data for each of the calls to make to this contract"
+            },
+            "returns": {
+              "results": "The results from each of the calls passed in via data"
+            }
+          },
+          "multicall(uint256,bytes[])": {
+            "details": "The `msg.value` should not be trusted for any method callable from multicall.",
+            "params": {
+              "data": "The encoded function data for each of the calls to make to this contract",
+              "deadline": "The time by which this function must be called before failing"
+            },
+            "returns": {
+              "_0": "The results from each of the calls passed in via data"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "multicall(bytes32,bytes[])": {
+            "notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+          },
+          "multicall(bytes[])": {
+            "notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+          },
+          "multicall(uint256,bytes[])": {
+            "notice": "Call multiple functions in the current contract and return the data from all of them if they all succeed"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/test/TestMulticallExtended.sol": "TestMulticallExtended"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/base/MulticallExtended.sol": {
+        "keccak256": "0x3ed53d5df38026ae2e81f8f8cfe0d1b3aceb154e81766a51e9542d542640b2f6",
+        "urls": [
+          "bzz-raw://374fda674e68ce9fe3dd7ef4dfd7b9714aea803466e223380f20f8869dba5d48",
+          "dweb:/ipfs/Qmc9reiYBSDVWkby9dP89smuDENiy52bACaaFaQgZ4ZUnE"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/base/PeripheryValidationExtended.sol": {
+        "keccak256": "0xbcb53f6802137e89666397c550380a5e8341e940120e1f603233541720d825e3",
+        "urls": [
+          "bzz-raw://9cad90c99189ae198f433b83cbb479b8d9d99bbcc143785c77dd367e858a095b",
+          "dweb:/ipfs/QmX7iZ5g7a2dbUTbb58wjh9quMRYWGVgEnujmdbDfGQ713"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/interfaces/IMulticallExtended.sol": {
+        "keccak256": "0xf2f6cf20200e265bfefc6f31f8dd3fa7af97d02d7cdae8734d1aaf17142653f2",
+        "urls": [
+          "bzz-raw://2b14a85ea54409d8cc45c2148a4349e99fab1d48c80f941fd434cf87f9a08355",
+          "dweb:/ipfs/QmQ83pfwMVMKkso7AeKHSxyQrMDufqEYzLyHQwz5p2YGW6"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/test/TestMulticallExtended.sol": {
+        "keccak256": "0x70b64672ac2d6c91c6bcab18297dc269fd0f3153880d392bbd4ffb14a4738c4c",
+        "urls": [
+          "bzz-raw://fc71708afdab896481a78dc2749b95793b7ef67f4d1b3032ac7d84bd34e38e6e",
+          "dweb:/ipfs/QmUbjDgAFtAzshRBCYNgDorJoaZutBTpwBxZy5xSLGkBJ8"
+        ],
+        "license": "UNLICENSED"
+      },
+      "node_modules/@mageswap/v3-periphery/contracts/base/BlockTimestamp.sol": {
+        "keccak256": "0x1aa66f71234064a0c0976f62233f2edbd69554e5ad817dc97f318bc8e11f4da6",
+        "urls": [
+          "bzz-raw://b3a40450e9d6b0f9cb91b40ffd6215612505bd74e7d954529958f4edc6ee7b93",
+          "dweb:/ipfs/QmewsUCHK5N5KhNtqEwK8JgsXFADyFBrQRS5HoDWM5gi3b"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "node_modules/@mageswap/v3-periphery/contracts/base/Multicall.sol": {
+        "keccak256": "0xfcfd78c62d2145634a791d5680a1af7055fbd301c415d29c09333c99c37d9037",
+        "urls": [
+          "bzz-raw://0d1c8f4a18cec8ad49e5269c5b07c7f6fd497dfc1b7b777f8ddcfb8055efd803",
+          "dweb:/ipfs/QmdeCTnfHM3RGtQuo3DMX9m7gPspGGwQp7ho6m9cJjjnER"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "node_modules/@mageswap/v3-periphery/contracts/base/PeripheryValidation.sol": {
+        "keccak256": "0xc736bab599912d6212e8414ee4ba7af0c1e08ff6aa11caa85f5f6e07f7d421c3",
+        "urls": [
+          "bzz-raw://06f6c13a86900c71fa486fc029a59d1b7eb96162bb42885b5f845d995294893e",
+          "dweb:/ipfs/QmUcBxMsmncw9n6eXhzzwSasGBvBGKH5FT8HSrAxrsXV4A"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "node_modules/@mageswap/v3-periphery/contracts/interfaces/IMulticall.sol": {
+        "keccak256": "0xa8f9d0061ee730a522dc4bae6bd5cabb3e997e2c5983da183e912bdca93dfa7b",
+        "urls": [
+          "bzz-raw://496b68d4f72d58cc83cf51bd9cc9c99aaa46dc3c3df7c951a9e50ba29ee33016",
+          "dweb:/ipfs/Qmc3bkXwuRP8mDpcKgvLgbCKn8tD8PGCaBjnLHSPMJCRGD"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/test/TestMulticallExtended.sol",
+    "id": 6404,
+    "exportedSymbols": {
+      "BlockTimestamp": [
+        9506
+      ],
+      "IMulticall": [
+        10250
+      ],
+      "IMulticallExtended": [
+        2542
+      ],
+      "Multicall": [
+        9591
+      ],
+      "MulticallExtended": [
+        1642
+      ],
+      "PeripheryValidation": [
+        10033
+      ],
+      "PeripheryValidationExtended": [
+        2335
+      ],
+      "TestMulticallExtended": [
+        6403
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:551:37",
+    "nodes": [
+      {
+        "id": 6355,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:37",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 6356,
+        "nodeType": "PragmaDirective",
+        "src": "63:19:37",
+        "nodes": [],
+        "literals": [
+          "abicoder",
+          "v2"
+        ]
+      },
+      {
+        "id": 6357,
+        "nodeType": "ImportDirective",
+        "src": "84:39:37",
+        "nodes": [],
+        "absolutePath": "contracts/base/MulticallExtended.sol",
+        "file": "../base/MulticallExtended.sol",
+        "scope": 6404,
+        "sourceUnit": 1643,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 6403,
+        "nodeType": "ContractDefinition",
+        "src": "125:464:37",
+        "nodes": [
+          {
+            "id": 6361,
+            "nodeType": "VariableDeclaration",
+            "src": "183:12:37",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "time",
+            "scope": 6403,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 6360,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "183:7:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 6370,
+            "nodeType": "FunctionDefinition",
+            "src": "202:96:37",
+            "nodes": [],
+            "body": {
+              "id": 6369,
+              "nodeType": "Block",
+              "src": "270:28:37",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 6367,
+                    "name": "time",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 6361,
+                    "src": "287:4:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 6366,
+                  "id": 6368,
+                  "nodeType": "Return",
+                  "src": "280:11:37"
+                }
+              ]
+            },
+            "baseFunctions": [
+              9505
+            ],
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_blockTimestamp",
+            "overrides": {
+              "id": 6363,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "243:8:37"
+            },
+            "parameters": {
+              "id": 6362,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "226:2:37"
+            },
+            "returnParameters": {
+              "id": 6366,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6365,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6370,
+                  "src": "261:7:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6364,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "261:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "260:9:37"
+            },
+            "scope": 6403,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 6380,
+            "nodeType": "FunctionDefinition",
+            "src": "304:70:37",
+            "nodes": [],
+            "body": {
+              "id": 6379,
+              "nodeType": "Block",
+              "src": "345:29:37",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 6377,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6375,
+                      "name": "time",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6361,
+                      "src": "355:4:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 6376,
+                      "name": "_time",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6372,
+                      "src": "362:5:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "355:12:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 6378,
+                  "nodeType": "ExpressionStatement",
+                  "src": "355:12:37"
+                }
+              ]
+            },
+            "functionSelector": "3beb26c4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTime",
+            "parameters": {
+              "id": 6373,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6372,
+                  "mutability": "mutable",
+                  "name": "_time",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6380,
+                  "src": "321:13:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6371,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:15:37"
+            },
+            "returnParameters": {
+              "id": 6374,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "345:0:37"
+            },
+            "scope": 6403,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 6385,
+            "nodeType": "StructDefinition",
+            "src": "380:58:37",
+            "nodes": [],
+            "canonicalName": "TestMulticallExtended.Tuple",
+            "members": [
+              {
+                "constant": false,
+                "id": 6382,
+                "mutability": "mutable",
+                "name": "a",
+                "nodeType": "VariableDeclaration",
+                "scope": 6385,
+                "src": "403:9:37",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 6381,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "403:7:37",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6384,
+                "mutability": "mutable",
+                "name": "b",
+                "nodeType": "VariableDeclaration",
+                "scope": 6385,
+                "src": "422:9:37",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 6383,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "422:7:37",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Tuple",
+            "scope": 6403,
+            "visibility": "public"
+          },
+          {
+            "id": 6402,
+            "nodeType": "FunctionDefinition",
+            "src": "444:143:37",
+            "nodes": [],
+            "body": {
+              "id": 6401,
+              "nodeType": "Block",
+              "src": "543:44:37",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 6399,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 6394,
+                      "name": "tuple",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6392,
+                      "src": "553:5:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Tuple_$6385_memory_ptr",
+                        "typeString": "struct TestMulticallExtended.Tuple memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 6396,
+                          "name": "a",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6387,
+                          "src": "571:1:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "id": 6397,
+                          "name": "b",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6389,
+                          "src": "577:1:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 6395,
+                        "name": "Tuple",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6385,
+                        "src": "561:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Tuple_$6385_storage_ptr_$",
+                          "typeString": "type(struct TestMulticallExtended.Tuple storage pointer)"
+                        }
+                      },
+                      "id": 6398,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [
+                        "b",
+                        "a"
+                      ],
+                      "nodeType": "FunctionCall",
+                      "src": "561:19:37",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Tuple_$6385_memory_ptr",
+                        "typeString": "struct TestMulticallExtended.Tuple memory"
+                      }
+                    },
+                    "src": "553:27:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Tuple_$6385_memory_ptr",
+                      "typeString": "struct TestMulticallExtended.Tuple memory"
+                    }
+                  },
+                  "id": 6400,
+                  "nodeType": "ExpressionStatement",
+                  "src": "553:27:37"
+                }
+              ]
+            },
+            "functionSelector": "3b16a6a3",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "functionThatReturnsTuple",
+            "parameters": {
+              "id": 6390,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6387,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6402,
+                  "src": "478:9:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6386,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "478:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6389,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6402,
+                  "src": "489:9:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6388,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "489:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "477:22:37"
+            },
+            "returnParameters": {
+              "id": 6393,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6392,
+                  "mutability": "mutable",
+                  "name": "tuple",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6402,
+                  "src": "523:18:37",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Tuple_$6385_memory_ptr",
+                    "typeString": "struct TestMulticallExtended.Tuple"
+                  },
+                  "typeName": {
+                    "id": 6391,
+                    "name": "Tuple",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6385,
+                    "src": "523:5:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Tuple_$6385_storage_ptr",
+                      "typeString": "struct TestMulticallExtended.Tuple"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "522:20:37"
+            },
+            "scope": 6403,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 6358,
+              "name": "MulticallExtended",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1642,
+              "src": "159:17:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MulticallExtended_$1642",
+                "typeString": "contract MulticallExtended"
+              }
+            },
+            "id": 6359,
+            "nodeType": "InheritanceSpecifier",
+            "src": "159:17:37"
+          }
+        ],
+        "contractDependencies": [
+          1642,
+          2335,
+          2542,
+          9506,
+          9591,
+          10033,
+          10250
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          6403,
+          1642,
+          2335,
+          10033,
+          9506,
+          9591,
+          2542,
+          10250
+        ],
+        "name": "TestMulticallExtended",
+        "scope": 6404
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 37
+}
